@@ -69,4 +69,4 @@ modules:
   # Run the script that installs themes and applies Flatpak overrides
   - type: script
     scripts:
-      - /tmp/scripts/configure-themes.sh
+      - configure-themes.sh
