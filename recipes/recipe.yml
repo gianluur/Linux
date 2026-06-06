@@ -18,6 +18,8 @@ modules:
 
   # Install system packages (dnf)
   - type: dnf
+    repos:
+      - "copr:lihaohong/yazi"
     install:
       packages:
         - kitty
@@ -42,10 +44,7 @@ modules:
         - kde-connect
         - sbsigntools
         - gnome-tweaks
-        - gnome-extensions-app
-        - gnome-shell-extensions
         - libreoffice
-        - msttcore-fonts-installer
 
   # Install system Flatpaks
   - type: default-flatpaks
