@@ -19,32 +19,33 @@ modules:
   # Install system packages (dnf)
   - type: dnf
     install:
-      - kitty
-      - nautilus
-      - gnome-disks
-      - gnome-fonts
-      - papers
-      - loupe
-      - vlc
-      - obs-studio
-      - media-writer
-      - qt6ct
-      - qt5ct
-      - piper
-      - fastfetch
-      - btop
-      - yazi
-      - nano
-      - zsh
-      - wl-clipboard
-      - mate-polkit
-      - kde-connect
-      - sbsigntools
-      - gnome-tweaks
-      - gnome-extensions-app
-      - gnome-shell-extensions
-      - libreoffice
-      - msttcore-fonts-installer
+      packages:
+        - kitty
+        - nautilus
+        - gnome-disks
+        - gnome-fonts
+        - papers
+        - loupe
+        - vlc
+        - obs-studio
+        - media-writer
+        - qt6ct
+        - qt5ct
+        - piper
+        - fastfetch
+        - btop
+        - yazi
+        - nano
+        - zsh
+        - wl-clipboard
+        - mate-polkit
+        - kde-connect
+        - sbsigntools
+        - gnome-tweaks
+        - gnome-extensions-app
+        - gnome-shell-extensions
+        - libreoffice
+        - msttcore-fonts-installer
 
   # Install system Flatpaks
   - type: default-flatpaks
@@ -58,13 +59,13 @@ modules:
 
   # Install fonts using BlueBuild's fonts module
   - type: fonts
-    fonts:
-      nerd-fonts:
+    fonts:                       # <-- The required 'fonts' parent object
+      nerd-fonts:                # <-- Now properly nested
         - JetBrainsMono
-      google-fonts:
+      google-fonts:              # <-- Now properly nested
         - Inter
 
   # Run the script that installs themes and applies Flatpak overrides
   - type: script
     scripts:
-      - configure-themes.sh
+      - /tmp/scripts/configure-themes.sh
