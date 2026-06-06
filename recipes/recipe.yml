@@ -1,0 +1,77 @@
+---
+# yaml-language-server: $schema=https://schema.blue-build.org/recipe-v1.json
+name: shxqow-bazzite-gnome-test
+description: "Test build – themes and apps only (Bazzite NVIDIA Open with GNOME)"
+
+base-image: ghcr.io/ublue-os/bazzite-nvidia-open
+image-version: latest
+
+modules:
+  # Copy local theme sources into the container
+  - type: files
+    files:
+      - source: ../files/theme
+        destination: /tmp/theme-sources
+
+  # Copy scripts (contains configure-themes.sh)
+  - type: files
+    files:
+      - source: ../files/scripts
+        destination: /tmp/scripts
+
+  # GSchema override for window buttons (minimize, maximize, close)
+  - type: gschema-overrides
+
+  # Install system packages (dnf)
+  - type: dnf
+    install:
+      packages:
+        - kitty
+        - nautilus
+        - gnome-disks
+        - gnome-fonts
+        - papers
+        - loupe
+        - vlc
+        - obs-studio
+        - media-writer
+        - qt6ct
+        - qt5ct
+        - piper
+        - fastfetch
+        - btop
+        - yazi
+        - nano
+        - zsh
+        - wl-clipboard
+        - mate-polkit
+        - kde-connect
+        - sbsigntools
+        - gnome-tweaks
+        - gnome-extensions-app
+        - gnome-shell-extensions
+        - libreoffice
+        - msttcore-fonts-installer
+
+  # Install system Flatpaks
+  - type: default-flatpaks
+    configurations:
+      - scope: system
+        notify: true
+        install:
+          - app.zen_browser.zen
+          - it.mijorus.gearlever
+          - com.github.tchx84.Flatseal
+
+  # Install fonts using BlueBuild's fonts module
+  - type: fonts
+    fonts:                       # <-- The required 'fonts' parent object
+      nerd-fonts:                # <-- Now properly nested
+        - JetBrainsMono
+      google-fonts:              # <-- Now properly nested
+        - Inter
+
+  # Run the script that installs themes and applies Flatpak overrides
+  - type: script
+    scripts:
+      - /tmp/scripts/configure-themes.sh
