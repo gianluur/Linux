@@ -32,7 +32,7 @@ modules:
         - loupe
         - vlc
         - obs-studio
-        - media-writer
+        - mediawriter
         - qt6ct
         - qt5ct
         - piper
