@@ -2,7 +2,7 @@
 set -euxo pipefail
 
 # Install GTK theme (Tokyonight, purple, macOS buttons, libadwaita)
-cd /tmp/theme-sources/gtk
+cd /tmp/theme-sources/gtk/themes
 ./install.sh --tweaks macos -t purple -l
 
 # Install icon theme (MacTahoe, purple, bold)
