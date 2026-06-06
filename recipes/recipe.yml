@@ -19,7 +19,9 @@ modules:
   # Install system packages (dnf)
   - type: dnf
     repos:
-      - "copr:lihaohong/yazi"
+      copr:
+        enable:
+          - "copr:lihaohong/yazi"
     install:
       packages:
         - kitty
