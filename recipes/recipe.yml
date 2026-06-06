@@ -27,7 +27,7 @@ modules:
         - kitty
         - nautilus
         - gnome-disks
-        - gnome-fonts
+        - gnome-font-view
         - papers
         - loupe
         - vlc
