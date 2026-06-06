@@ -21,7 +21,7 @@ modules:
     repos:
       copr:
         enable:
-          - "copr:lihaohong/yazi"
+          - "lihaohong/yazi"
     install:
       packages:
         - kitty
