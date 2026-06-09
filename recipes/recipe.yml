@@ -24,6 +24,7 @@ modules:
           - "lihaohong/yazi"
     install:
       packages:
+        - meson
         - sassc
         - gtk-murrine-engine
         - kitty
