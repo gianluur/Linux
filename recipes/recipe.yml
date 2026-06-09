@@ -26,7 +26,6 @@ modules:
       packages:
         - sassc
         - gtk-murrine-engine
-        - gnome-themes-extra
         - kitty
         - nautilus
         - gnome-disks
