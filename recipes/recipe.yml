@@ -25,6 +25,8 @@ modules:
     install:
       packages:
         - sassc
+        - gtk-murrine-engine
+        - gnome-themes-extra
         - kitty
         - nautilus
         - gnome-disks
@@ -71,4 +73,4 @@ modules:
   - type: script
     scripts:
       - configure-themes.sh
-      - build-rounded-blur
+      - build-rounded-blur.sh
