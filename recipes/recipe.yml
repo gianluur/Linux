@@ -70,3 +70,4 @@ modules:
   - type: script
     scripts:
       - configure-themes.sh
+      - recipes/recipe.yml
