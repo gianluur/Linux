@@ -24,6 +24,7 @@ modules:
           - "lihaohong/yazi"
     install:
       packages:
+        - sassc
         - kitty
         - nautilus
         - gnome-disks
@@ -70,4 +71,4 @@ modules:
   - type: script
     scripts:
       - configure-themes.sh
-      - recipes/recipe.yml
+      - build-rounded-blur
