@@ -1,45 +1,83 @@
----
 # yaml-language-server: $schema=https://schema.blue-build.org/recipe-v1.json
-# image will be published to ghcr.io/<user>/<name>
-name: Linux
-# description will be included in the image's metadata
-description: This is my personal OS image.
+name: workstation
+description: "Bazzite base, KDE Desktop, GTK apps, Distrobox utilities"
 
-# the base image to build on top of (FROM) and the version tag to use
-base-image: ghcr.io/ublue-os/silverblue-main
-image-version: 42 # latest is also supported if you want new updates ASAP
+base-image: ghcr.io/ublue-os/bazzite-nvidia-open
+image-version: latest
 
-# module configuration, executed in order
-# you can include multiple instances of the same module
 modules:
   - type: files
     files:
-      - source: system
-        destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
+      - source: theme/klassy
+        destination: /etc/skel/.config/klassy
+
+      - source: scripts
+        destination: /usr/bin
+      - source: distrobox
+        destination: /etc/distrobox
+
+
+  - type: systemd
+    user:
+      enabled:
+        - setup-distrobox.service
+
+  - type: gschema-overrides
 
   - type: dnf
     repos:
+      files:
+        add:
+          - https://download.opensuse.org/repositories/home:paulmcauley/Fedora_44/home:paulmcauley.repo
       copr:
-        - atim/starship
+        enable:
+          - infinality/kwin-effects-better-blur-dx
+          - atim/starship
+
     install:
       packages:
-        - micro
+        - meson
+        - sassc
+        - gtk-murrine-engine
+        - kitty
+        - nautilus
+        - gnome-disks
+        - zsh
+        - wl-clipboard
+        - kde-connect
+        - sbsigntools
+        - klassy
+        - kwin-effects-better-blur-dx
+        - kwin-effects-better-blur-dx-x11
+        - distrobox
         - starship
-    remove:
-      packages:
-        # example: removing firefox (in favor of the flatpak)
-        # "firefox" is the main package, "firefox-langpacks" is a dependency
-        - firefox
-        - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
 
   - type: default-flatpaks
     configurations:
-      - notify: true # Send notification after install/uninstall is finished (true/false)
-        scope: system
-        # If no repo information is specified, Flathub will be used by default
-        install: # system flatpaks we want all users to have and not remove
-          - org.mozilla.firefox
+      - scope: user
+        notify: true
+        install:
+          - app.zen_browser.zen
+          - it.mijorus.gearlever
+          - com.github.tchx84.Flatseal
+          - org.gnome.font-viewer
+          - org.onlyoffice.desktopeditors
+          - com.obsproject.Studio
+          - org.gnome.Papers
           - org.gnome.Loupe
-      - scope: user # Also add Flathub user repo, but no user packages
+          - org.videolan.VLC
+          - org.freedesktop.Piper
+          - org.fedoraproject.MediaWriter
+          - io.missioncenter.MissionCenter
+          - md.obsidian.Obsidian
+          - org.localsend.localsend_app
+          - dev.vencord.Vesktop
+          - com.vscodium.codium
+          - com.ranfdev.DistroShelf
 
-  - type: signing # this sets up the proper policy & signing files for signed images to work fully
+  - type: fonts
+    fonts:
+      nerd-fonts:               
+        - JetBrainsMono
+      google-fonts:              
+        - Inter

@@ -1,0 +1,11 @@
+[Unit]
+Description=Run distrobox setup once on login
+After=default.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/etc/setup_distrobox.sh
+RemainAfterExit=yes
+
+[Install]
+WantedBy=default.target
