@@ -24,7 +24,7 @@ modules:
   - type: systemd
     user:
       enabled:
-        - setup-distrobox.service
+        - setup-userspace.service
 
   - type: gschema-overrides
 
@@ -40,9 +40,9 @@ modules:
 
     install:
       packages:
-        - meson
-        - sassc
-        - gtk-murrine-engine
+        # - meson
+        # - sassc
+        # - gtk-murrine-engine
         - kitty
         - nautilus
         - gnome-disks
