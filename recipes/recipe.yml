@@ -13,8 +13,12 @@ modules:
 
       - source: scripts
         destination: /usr/bin
+
       - source: distrobox
         destination: /etc/distrobox
+
+      - source: theme
+        destination: /etc/theme
 
 
   - type: systemd
