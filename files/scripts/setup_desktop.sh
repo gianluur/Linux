@@ -4,14 +4,14 @@ set -euo pipefail
 export PATH="$HOME/.local/bin:$PATH"
 
 # TODO: Automate SHA256 detection of the konsave file
-DIRECTORY="/etc/theme/konsave/"
+DIRECTORY="/etc/bluebuild/theme/konsave/"
 KONSAVE_FILE="${DIRECTORY}/desktop.knsv"
 EXPECTED_SHA256="7bf80e28fdc052e7d172f531eebeda89ac7b42a33d30a9bcae3e587e74ac41cb"
 
 function check_konsave_installation {
     if ! command -v konsave &>/dev/null; then
         echo "Konsave is not present, installing it now"
-        python -m pip install konsave
+        python3 -m pip install konsave
     fi
 }
 

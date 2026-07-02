@@ -1,10 +1,10 @@
 [Unit]
-Description=Run distrobox setup once on login
+Description=Configure userspace according to the default bluebuild configuration
 After=default.target
 
 [Service]
 Type=oneshot
-ExecStart=/usr/etc/setup_userspace.sh
+ExecStart=/etc/bluebuild/scripts/setup_userspace.sh
 RemainAfterExit=yes
 
 [Install]

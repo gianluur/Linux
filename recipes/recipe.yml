@@ -12,13 +12,13 @@ modules:
         destination: /etc/skel/.config/klassy
 
       - source: scripts
-        destination: /usr/bin
+        destination: /etc/bluebuild/scripts
 
       - source: distrobox
-        destination: /etc/distrobox
+        destination: /etc/bluebuild/distrobox
 
       - source: theme
-        destination: /etc/theme
+        destination: /etc/bluebuild/theme
 
 
   - type: systemd
@@ -55,6 +55,7 @@ modules:
         - kwin-effects-better-blur-dx-x11
         - distrobox
         - starship
+        - python3-pip
 
   - type: default-flatpaks
     configurations:
