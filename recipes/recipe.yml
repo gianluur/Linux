@@ -40,9 +40,6 @@ modules:
 
     install:
       packages:
-        # - meson
-        # - sassc
-        # - gtk-murrine-engine
         - kitty
         - nautilus
         - gnome-disks
