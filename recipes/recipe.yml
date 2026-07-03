@@ -43,8 +43,7 @@ modules:
         - kitty
         - nwg-look
         - adw-gtk3-theme 
-        - nautilus
-        - gnome-disks
+        - kde-partitionmanager 
         - zsh
         - wl-clipboard
         - kde-connect
@@ -64,30 +63,33 @@ modules:
         - kwrite
         - kate
         - filelight
+        - krbf
+        - krdc
 
   - type: default-flatpaks
     configurations:
       - scope: user
         notify: true
         install:
-          - app.zen_browser.zen
-          - it.mijorus.gearlever
-          - com.github.tchx84.Flatseal
-          - org.gnome.font-viewer
-          - org.onlyoffice.desktopeditors
-          - com.obsproject.Studio
-          - org.gnome.Papers
-          - org.gnome.Loupe
-          - org.videolan.VLC
-          - org.freedesktop.Piper
-          - org.fedoraproject.MediaWriter
-          - io.missioncenter.MissionCenter
-          - md.obsidian.Obsidian
-          - org.localsend.localsend_app
-          - dev.vencord.Vesktop
-          - com.vscodium.codium
-          - com.ranfdev.DistroShelf
-          - org.gnome.FileRoller
+          # Desktop Essentials
+          - app.zen_browser.zen # Browser
+          - org.kde.kcalc # Calculator
+          - org.onlyoffice.desktopeditors # Office Suite
+          - com.obsproject.Studio # Video Recording
+          - org.kde.okular # PDF Reader
+          - org.kde.gwenview # Image Viewer
+          - org.videolan.VLC # Audio & Video Player
+          - md.obsidian.Obsidian # Notes
+          - org.localsend.localsend_app # File Sharing
+          - dev.vencord.Vesktop # Discord
+          - com.vscodium.codium # Editor
+
+          # Comptaibility
+          - it.mijorus.gearlever # AppImage handling
+          - com.ranfdev.DistroShelf # Distrobox handling
+          - com.github.tchx84.Flatseal # Flatpak permissions
+          - org.fedoraproject.MediaWriter # ISO Burner
+          - org.freedesktop.Piper # Logitech 
 
   - type: fonts
     fonts:
