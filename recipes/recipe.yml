@@ -30,6 +30,7 @@ modules:
       files:
         add:
           - https://download.opensuse.org/repositories/home:paulmcauley/Fedora_44/home:paulmcauley.repo
+          - https://download.opensuse.org/repositories/home:luisbocanegra/Fedora_44/home:luisbocanegra.repo
       copr:
         enable:
           - infinality/kwin-effects-better-blur-dx
@@ -50,6 +51,11 @@ modules:
         - distrobox
         - starship
         - python3-pip
+        - plasma-panel-colorizer
+
+    remove:
+      packages:
+        - kde-gtk-config 
 
   - type: default-flatpaks
     configurations:

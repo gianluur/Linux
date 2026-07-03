@@ -55,9 +55,19 @@ function verify_integrity {
     echo "Integrity check passed."
 }
 
-check_konsave_installation
-assemble_knsv_file
-verify_integrity
+function setup_konsave {
+    check_konsave_installation
+    assemble_knsv_file
+    verify_integrity
 
-konsave --import-profile "$KNSV_FILE"
-konsave --apply desktop
+    konsave --import-profile "$KNSV_FILE"
+    konsave --apply desktop
+}
+
+function move_klassy_configs {
+    cp /etc/bluebuild/theme/klassy/* ~/.config/klassy
+}
+
+
+setup_konsave
+move_klassy_configs
