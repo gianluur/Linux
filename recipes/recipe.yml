@@ -35,10 +35,14 @@ modules:
         enable:
           - infinality/kwin-effects-better-blur-dx
           - atim/starship
+          - lionheartp/Hyprland
 
     install:
       packages:
+        - kvantum
         - kitty
+        - nwg-look
+        - adw-gtk3-theme 
         - nautilus
         - gnome-disks
         - zsh
@@ -55,7 +59,11 @@ modules:
 
     remove:
       packages:
-        - kde-gtk-config 
+        - kde-gtk-config
+        - konsole
+        - kwrite
+        - kate
+        - filelight
 
   - type: default-flatpaks
     configurations:
@@ -79,6 +87,7 @@ modules:
           - dev.vencord.Vesktop
           - com.vscodium.codium
           - com.ranfdev.DistroShelf
+          - org.gnome.FileRoller
 
   - type: fonts
     fonts:

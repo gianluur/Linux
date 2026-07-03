@@ -68,6 +68,5 @@ function move_klassy_configs {
     cp /etc/bluebuild/theme/klassy/* ~/.config/klassy
 }
 
-
 setup_konsave
 move_klassy_configs
