@@ -8,9 +8,6 @@ image-version: latest
 modules:
   - type: files
     files:
-      - source: theme/klassy
-        destination: /etc/skel/.config/klassy
-
       - source: scripts
         destination: /etc/bluebuild/scripts
 

@@ -3,42 +3,61 @@ set -euo pipefail
 
 export PATH="$HOME/.local/bin:$PATH"
 
-# TODO: Automate SHA256 detection of the konsave file
-DIRECTORY="/etc/bluebuild/theme/konsave/"
-KONSAVE_FILE="${DIRECTORY}/desktop.knsv"
+KNSV_PARTS_DIRECTORY="/etc/bluebuild/theme/konsave"
+KNSV_FILE_DIRECTORY="/tmp/bluebuild/konsave"
+KNSV_FILE_NAME="desktop.knsv"
+KNSV_FILE="${KNSV_FILE_DIRECTORY}/${KNSV_FILE_NAME}"
+
 EXPECTED_SHA256="7bf80e28fdc052e7d172f531eebeda89ac7b42a33d30a9bcae3e587e74ac41cb"
 
 function check_konsave_installation {
+    echo "Checking konsave installation..."
     if ! command -v konsave &>/dev/null; then
-        echo "Konsave is not present, installing it now"
-        python3 -m pip install konsave
+        echo "Konsave is not present, installing it now..."
+        python3 -m pip install --user konsave
+        echo "Konsave installed successfully."
+    else
+        echo "Konsave is already installed."
     fi
 }
 
 function assemble_knsv_file {
-    if [[ ! -f "$KONSAVE_FILE" ]]; then
-        echo "Assembling knsv file..."
-        cat "${KONSAVE_FILE}".part* > "$KONSAVE_FILE"
+    echo "Assembling knsv file..."
+
+    mkdir -p "$KNSV_FILE_DIRECTORY"
+
+    if [[ -f "$KNSV_FILE" ]]; then
+        echo "The file was already assembled."
+        return 0
     fi
+
+    if ! ls "${KNSV_PARTS_DIRECTORY}/${KNSV_FILE_NAME}".part* &>/dev/null; then
+        echo "Error: No parts found in ${KNSV_PARTS_DIRECTORY}!" >&2
+        exit 1
+    fi
+
+    cat "${KNSV_PARTS_DIRECTORY}/${KNSV_FILE_NAME}".part* > "$KNSV_FILE"
+    echo "Assembling completed."
 }
 
 function verify_integrity {
     echo "Verifying file integrity…"
-    ACTUAL_SHA256=$(sha256sum "$KONSAVE_FILE" | awk '{print $1}')
-    
+    ACTUAL_SHA256=$(sha256sum "$KNSV_FILE" | awk '{print $1}')
+
     if [[ "$ACTUAL_SHA256" != "$EXPECTED_SHA256" ]]; then
         echo "Error: Integrity check failed!" >&2
         echo "Expected SHA256: $EXPECTED_SHA256" >&2
         echo "Actual SHA256:   $ACTUAL_SHA256" >&2
         echo "The reassembled file is corrupt or parts are missing." >&2
-        rm -f "$KONSAVE_FILE"
+        rm -f "$KNSV_FILE"
         exit 1
     fi
+    echo "Integrity check passed."
 }
 
 check_konsave_installation
 assemble_knsv_file
 verify_integrity
 
-konsave --import-profile "$KONSAVE_FILE"
+konsave --import-profile "$KNSV_FILE"
 konsave --apply desktop
