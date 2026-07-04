@@ -65,6 +65,7 @@ function setup_konsave {
 }
 
 function move_klassy_configs {
+    mkdir -p ~/.config/klassy
     cp /etc/bluebuild/theme/klassy/* ~/.config/klassy
 }
 
