@@ -8,7 +8,7 @@ KNSV_FILE_DIRECTORY="/tmp/bluebuild/konsave"
 KNSV_FILE_NAME="desktop.knsv"
 KNSV_FILE="${KNSV_FILE_DIRECTORY}/${KNSV_FILE_NAME}"
 
-EXPECTED_SHA256="7bf80e28fdc052e7d172f531eebeda89ac7b42a33d30a9bcae3e587e74ac41cb"
+EXPECTED_SHA256="e94e7f6b202c9a8cadc6bf70f7a671da2c6bd53000a1944944809d325592f9b4"
 
 function check_konsave_installation {
     echo "Checking konsave installation..."

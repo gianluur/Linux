@@ -55,6 +55,7 @@ modules:
         - starship
         - python3-pip
         - plasma-panel-colorizer
+        - plasma-discover
 
     remove:
       packages:
@@ -63,7 +64,7 @@ modules:
         - kwrite
         - kate
         - filelight
-        - krbf
+        - krfb
         - krdc
 
   - type: default-flatpaks
