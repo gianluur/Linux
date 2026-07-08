@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Workstation Userspace Setup
+Comment=Run Ansible deployment inside an interactive terminal
+Exec=kitty --hold /etc/bluebuild/scripts/setup_userspace.sh
+Icon=utilities-terminal
+Terminal=false
+X-KDE-AutostartScript=true
+Categories=System;

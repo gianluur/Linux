@@ -1,0 +1,96 @@
+/* GTK4 & Libadwaita Color Overrides */
+
+@define-color accent_color #7157aa;
+@define-color accent_bg_color #7157aa;
+@define-color accent_fg_color #242424;
+
+@define-color window_bg_color #242424;
+@define-color window_fg_color #dedede;
+
+@define-color view_bg_color #242424;
+@define-color view_fg_color #dedede;
+
+@define-color headerbar_bg_color #333333;
+@define-color headerbar_fg_color #dedede;
+@define-color headerbar_border_color #333333;
+@define-color headerbar_backdrop_color #333333;
+@define-color headerbar_shade_color rgba(0, 0, 0, 0.07);
+
+@define-color card_bg_color #242424;
+@define-color card_fg_color #dedede;
+@define-color card_border_color #242424;
+
+@define-color popover_bg_color #242424;
+@define-color popover_fg_color #dedede;
+
+@define-color sidebar_bg_color #212121;
+@define-color sidebar_fg_color #dedede;
+@define-color sidebar_backdrop_color #212121;
+@define-color sidebar_shade_color rgba(0, 0, 0, 0.07);
+
+@define-color dialog_bg_color #242424;
+@define-color dialog_fg_color #dedede;
+
+@define-color scrollbar_outline_color #242424;
+
+@define-color success_color #27ae60;
+@define-color success_bg_color #27ae60;
+@define-color success_fg_color #242424;
+
+@define-color warning_color #f67400;
+@define-color warning_bg_color #f67400;
+@define-color warning_fg_color #242424;
+
+@define-color error_color #da4453;
+@define-color error_bg_color #da4453;
+@define-color error_fg_color #242424;
+
+@define-color destructive_color #da4453;
+@define-color destructive_bg_color #da4453;
+@define-color destructive_fg_color #242424;
+
+/* Classic GTK theme variables for compatibility */
+@define-color theme_bg_color #242424;
+@define-color theme_fg_color #dedede;
+@define-color theme_base_color #242424;
+@define-color theme_text_color #dedede;
+@define-color theme_selected_bg_color #7157aa;
+@define-color theme_selected_fg_color #242424;
+
+@define-color theme_unfocused_bg_color #242424;
+@define-color theme_unfocused_fg_color #dedede;
+@define-color theme_unfocused_base_color #242424;
+@define-color theme_unfocused_text_color #dedede;
+@define-color theme_unfocused_selected_bg_color #7157aa;
+@define-color theme_unfocused_selected_fg_color #242424;
+
+@define-color insensitive_bg_color #212121;
+@define-color insensitive_fg_color #949494;
+@define-color insensitive_base_color #242424;
+@define-color insensitive_base_fg_color #949494;
+@define-color insensitive_selected_bg_color #212121;
+@define-color insensitive_selected_fg_color #949494;
+
+@define-color borders #212121;
+@define-color unfocused_borders #212121;
+
+/* CSS Variable Custom Properties */
+:root {
+  --accent-color: #7157aa;
+  --accent-bg-color: #7157aa;
+  --accent-fg-color: #242424;
+  --window-bg-color: #242424;
+  --window-fg-color: #dedede;
+  --view-bg-color: #242424;
+  --view-fg-color: #dedede;
+  --headerbar-bg-color: #333333;
+  --headerbar-fg-color: #dedede;
+  --card-bg-color: #242424;
+  --card-fg-color: #dedede;
+  --popover-bg-color: #242424;
+  --popover-fg-color: #dedede;
+  --dialog-bg-color: #242424;
+  --dialog-fg-color: #dedede;
+  --sidebar-bg-color: #212121;
+  --sidebar-fg-color: #dedede;
+}

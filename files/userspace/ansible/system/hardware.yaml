@@ -1,0 +1,11 @@
+---
+- name: Symlink Hardware & Input configurations
+  ansible.builtin.file:
+    src: "{{ repo_system }}/hardware/{{ item.folder }}/{{ item.file }}"
+    dest: "{{ xdg_config }}/{{ item.file }}"
+    state: link
+    force: yes
+  loop:
+    - { folder: "input", file: "kcminputrc" }
+    - { folder: "kscreen", file: "kwinoutputconfig.json" }
+    - { folder: "kscreenlocker", file: "kscreenlockerrc" }
