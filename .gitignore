@@ -1,6 +1,0 @@
-cosign.key
-cosign.private
-/Containerfile
-*.iso
-*.iso-CHECKSUM
-files/theme/konsave/desktop.knsv

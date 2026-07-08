@@ -1,0 +1,13 @@
+---
+- name: Ensure Flatpak overrides directory exists
+  ansible.builtin.file:
+    path: "{{ xdg_data }}/flatpak/overrides"
+    state: directory
+    mode: '0755'
+
+- name: Symlink Flatpak Overrides
+  ansible.builtin.file:
+    src: "{{ repo_system }}/flatpak/overrides"
+    dest: "{{ xdg_data }}/flatpak/overrides"
+    state: link
+    force: yes
