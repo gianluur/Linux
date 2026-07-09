@@ -1,11 +1,21 @@
 ---
-- name: Symlink Hardware & Input configurations
+- name: Ensure Hardware configuration directories exist
+  ansible.builtin.file:
+    path: "{{ xdg_config }}/{{ item }}"
+    state: directory
+    mode: '0755'
+  loop:
+    - input
+    - kscreen
+    - kscreenlocker
+
+- name: Force-symlink Hardware files
   ansible.builtin.file:
     src: "{{ repo_system }}/hardware/{{ item.folder }}/{{ item.file }}"
-    dest: "{{ xdg_config }}/{{ item.file }}"
+    dest: "{{ xdg_config }}/{{ item.dest | default(item.file) }}"
     state: link
     force: yes
   loop:
     - { folder: "input", file: "kcminputrc" }
-    - { folder: "kscreen", file: "kwinoutputconfig.json" }
+    - { folder: "kscreen", file: "kwinoutputconfig.json", dest: "kscreen/kwinoutputconfig.json" }
     - { folder: "kscreenlocker", file: "kscreenlockerrc" }

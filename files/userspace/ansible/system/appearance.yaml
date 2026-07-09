@@ -1,47 +1,60 @@
 ---
-- name: Ensure Appearance directories exist
+- name: Ensure Appearance parent directories exist
   ansible.builtin.file:
-    path: "{{ xdg_data }}/{{ item }}"
+    path: "{{ item }}"
     state: directory
     mode: '0755'
   loop:
-    - aurorae/themes
-    - color-schemes
-    - icons
-    - plasma/desktoptheme
-    - plasma/look-and-feel
-    - wallpapers
+    # Data paths
+    - "{{ xdg_data }}/aurorae/themes"
+    - "{{ xdg_data }}/color-schemes"
+    - "{{ xdg_data }}/cursors"
+    - "{{ xdg_data }}/icons"
+    - "{{ xdg_data }}/plasma/desktoptheme"
+    - "{{ xdg_data }}/plasma/look-and-feel"
+    - "{{ xdg_data }}/wallpapers"
+    # Config paths
+    - "{{ xdg_config }}/gtk-3.0"
+    - "{{ xdg_config }}/gtk-4.0"
 
-- name: Symlink Aurorae Themes
+- name: Force-symlink individual Color Schemes
   ansible.builtin.file:
-    src: "{{ repo_system }}/appearance/aurorae/themes"
-    dest: "{{ xdg_data }}/aurorae/themes"
-    state: link
-    force: yes
-
-- name: Symlink Color Schemes
-  ansible.builtin.file:
-    src: "{{ repo_system }}/appearance/color-schemes"
-    dest: "{{ xdg_data }}/color-schemes"
-    state: link
-    force: yes
-
-- name: Symlink Icons & Cursors
-  ansible.builtin.file:
-    src: "{{ repo_system }}/appearance/{{ item }}"
-    dest: "{{ xdg_data }}/icons/{{ item }}"
+    src: "{{ repo_system }}/appearance/color-schemes/{{ item }}"
+    dest: "{{ xdg_data }}/color-schemes/{{ item }}"
     state: link
     force: yes
   loop:
-    - icons
-    - cursors
+    - MacTahoeDark.colors
+    - TokyoNightModified.colors
 
-- name: Symlink GTK Configurations
+- name: Force-symlink custom Theme Folders (Aurorae, Icons, Cursors)
   ansible.builtin.file:
-    src: "{{ repo_system }}/appearance/gtk/{{ item }}"
-    dest: "{{ xdg_config }}/{{ item }}"
+    src: "{{ repo_system }}/appearance/{{ item.folder }}/{{ item.name }}"
+    dest: "{{ xdg_data }}/{{ item.folder }}/{{ item.name }}"
     state: link
     force: yes
   loop:
-    - gtk-3.0
-    - gtk-4.0
+    # Cursors
+    - { folder: "cursors", name: "Bibata-Modern-Ice" }
+    - { folder: "cursors", name: "MacOS-Tahoe-Cursor" }
+    # Icons
+    - { folder: "icons", name: "distrobox" }
+    - { folder: "icons", name: "hicolor" }
+    - { folder: "icons", name: "MacTahoe-purple" }
+    - { folder: "icons", name: "MacTahoe-purple-dark" }
+    - { folder: "icons", name: "MacTahoe-purple-light" }
+
+- name: Force-symlink GTK settings and configs
+  ansible.builtin.file:
+    src: "{{ repo_system }}/appearance/gtk/{{ item.src }}"
+    dest: "{{ item.dest }}"
+    state: link
+    force: yes
+  loop:
+    # Root configs
+    - { src: "gtkrc", dest: "{{ xdg_config }}/gtkrc" }
+    - { src: "gtkrc-2.0", dest: "{{ ansible_facts.env.HOME }}/.gtkrc-2.0" }
+    # GTK 3 & 4 specific settings (Bypasses the "directory not empty" error!)
+    - { src: "gtk-3.0/settings.ini", dest: "{{ xdg_config }}/gtk-3.0/settings.ini" }
+    - { src: "gtk-4.0/settings.ini", dest: "{{ xdg_config }}/gtk-4.0/settings.ini" }
+  ignore_errors: true # In case settings.ini isn't tracked in your repo yet

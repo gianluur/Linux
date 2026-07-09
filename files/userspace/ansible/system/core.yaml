@@ -8,16 +8,12 @@
     - autostart
     - xdg-desktop-portal
 
-- name: Symlink Core XDG Portal Configs
+- name: Force-symlink individual Core Files
   ansible.builtin.file:
     src: "{{ repo_system }}/core/xdg-portal/xdg-desktop-portal-kderc"
     dest: "{{ xdg_config }}/xdg-desktop-portal-kderc"
     state: link
     force: yes
 
-- name: Symlink Autostart Scripts
-  ansible.builtin.file:
-    src: "{{ repo_system }}/core/autostart/"
-    dest: "{{ xdg_config }}/autostart"
-    state: link
-    force: yes
+# Note: If you add .desktop files to your repo's system/core/autostart folder later,
+# add them as individual specific tasks here just like the portal config above!

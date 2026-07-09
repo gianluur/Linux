@@ -1,13 +1,14 @@
 ---
-- name: Ensure Flatpak overrides directory exists
+- name: Ensure Flatpak overrides parent directory exists
   ansible.builtin.file:
     path: "{{ xdg_data }}/flatpak/overrides"
     state: directory
     mode: '0755'
 
-- name: Symlink Flatpak Overrides
+- name: Force-symlink Flatpak Overrides (Global)
   ansible.builtin.file:
-    src: "{{ repo_system }}/flatpak/overrides"
-    dest: "{{ xdg_data }}/flatpak/overrides"
+    src: "{{ repo_system }}/flatpak/overrides/global"
+    dest: "{{ xdg_data }}/flatpak/overrides/global"
     state: link
     force: yes
+  ignore_errors: true # Ignores if you haven't tracked flatseal overrides yet

@@ -1,20 +1,19 @@
 ---
-- name: Ensure App config directories exist
+- name: Ensure specific App configuration directories exist
   ansible.builtin.file:
     path: "{{ xdg_config }}/{{ item }}"
     state: directory
     mode: '0755'
   loop:
     - dolphin
-    - kate/externaltools
-    - kate/lspclient
+    - kate
     - kconf-update
     - konsole
     - krunner
     - spectacle
     - systemsettings
 
-- name: Symlink App Configuration Files
+- name: Force-symlink specific App Files
   ansible.builtin.file:
     src: "{{ repo_apps }}/{{ item.src }}"
     dest: "{{ xdg_config }}/{{ item.dest }}"
@@ -24,12 +23,12 @@
     # Dolphin
     - { src: "dolphin/dolphinrc", dest: "dolphinrc" }
     - { src: "dolphin/dolphinui.rc", dest: "dolphin/dolphinui.rc" }
-    # Kate
+    # Kate (Symlinking custom subfolders is safe here)
     - { src: "kate/katerc", dest: "katerc" }
     - { src: "kate/externaltools", dest: "kate/externaltools" }
     - { src: "kate/lspclient", dest: "kate/lspclient" }
-    # Other KDE Utilities
-    - { src: "kconf-update/kconf_updaterc", dest: "kconf_updaterc" }
+    # Utilities
+    - { src: "kconf-update/kconf_updaterc", dest: "kconf-update/kconf_updaterc" }
     - { src: "konsole/konsolerc", dest: "konsolerc" }
     - { src: "krunner/krunnerrc", dest: "krunnerrc" }
     - { src: "spectacle/spectaclerc", dest: "spectaclerc" }
