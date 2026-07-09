@@ -15,7 +15,7 @@ cp -r /etc/bluebuild/userspace/configs/system "$HOME/Configuration/System"
 
 # 3. Execute Ansible
 echo "-> Running Ansible userspace playbook..."
-ansible-playbook /etc/bluebuild/userspace/setup.yaml
+ansible-playbook /etc/bluebuild/userspace/deploy.yaml
 
 echo "========================================="
 echo "   ✅ Setup finished! Press Enter to close."
