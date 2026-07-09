@@ -27,7 +27,23 @@
     - MacTahoeDark.colors
     - TokyoNightModified.colors
 
-- name: Force-symlink custom Theme Folders (Aurorae, Icons, Cursors)
+# --- DEMOLITION TASK (Excluding hicolor!) ---
+- name: Remove populated host theme folders to make way for symlinks
+  ansible.builtin.file:
+    path: "{{ xdg_data }}/{{ item.folder }}/{{ item.name }}"
+    state: absent
+  loop:
+    # Cursors
+    - { folder: "cursors", name: "Bibata-Modern-Ice" }
+    - { folder: "cursors", name: "MacOS-Tahoe-Cursor" }
+    # Icons
+    - { folder: "icons", name: "distrobox" }
+    - { folder: "icons", name: "MacTahoe-purple" }
+    - { folder: "icons", name: "MacTahoe-purple-dark" }
+    - { folder: "icons", name: "MacTahoe-purple-light" }
+
+# --- SYMLINK TASK ---
+- name: Force-symlink custom Theme Folders
   ansible.builtin.file:
     src: "{{ repo_system }}/appearance/{{ item.folder }}/{{ item.name }}"
     dest: "{{ xdg_data }}/{{ item.folder }}/{{ item.name }}"
@@ -39,11 +55,19 @@
     - { folder: "cursors", name: "MacOS-Tahoe-Cursor" }
     # Icons
     - { folder: "icons", name: "distrobox" }
-    - { folder: "icons", name: "hicolor" }
     - { folder: "icons", name: "MacTahoe-purple" }
     - { folder: "icons", name: "MacTahoe-purple-dark" }
     - { folder: "icons", name: "MacTahoe-purple-light" }
 
+# --- HICOLOR MERGE TASK ---
+- name: Safely merge custom hicolor icons without overwriting system app icons
+  ansible.builtin.copy:
+    src: "{{ repo_system }}/appearance/icons/hicolor/"
+    dest: "{{ xdg_data }}/icons/hicolor/"
+    mode: preserve
+    force: yes
+
+# --- GTK CONFIGS ---
 - name: Force-symlink GTK settings and configs
   ansible.builtin.file:
     src: "{{ repo_system }}/appearance/gtk/{{ item.src }}"
@@ -54,7 +78,7 @@
     # Root configs
     - { src: "gtkrc", dest: "{{ xdg_config }}/gtkrc" }
     - { src: "gtkrc-2.0", dest: "{{ ansible_facts.env.HOME }}/.gtkrc-2.0" }
-    # GTK 3 & 4 specific settings (Bypasses the "directory not empty" error!)
+    # GTK 3 & 4 specific settings
     - { src: "gtk-3.0/settings.ini", dest: "{{ xdg_config }}/gtk-3.0/settings.ini" }
     - { src: "gtk-4.0/settings.ini", dest: "{{ xdg_config }}/gtk-4.0/settings.ini" }
-  ignore_errors: true # In case settings.ini isn't tracked in your repo yet
+  ignore_errors: true

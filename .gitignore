@@ -5,3 +5,4 @@ cosign.private
 *.iso-CHECKSUM
 files/theme/konsave/desktop.knsv
 design.md
+files/userspace/ansible/*
