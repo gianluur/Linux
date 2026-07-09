@@ -37,6 +37,7 @@ modules:
 
     install:
       packages:
+        - ansible
         - kvantum
         - kitty
         - nwg-look
