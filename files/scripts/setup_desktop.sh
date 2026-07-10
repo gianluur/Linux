@@ -3,12 +3,11 @@ set -euo pipefail
 
 export PATH="$HOME/.local/bin:$PATH"
 
-KNSV_PARTS_DIRECTORY="/etc/bluebuild/theme/konsave"
+KNSV_PARTS_DIRECTORY="/etc/bluebuild/konsave"
 KNSV_FILE_DIRECTORY="/tmp/bluebuild/konsave"
-KNSV_FILE_NAME="desktop.knsv"
+KNSV_FILE_NAME="konsave.knsv"
 KNSV_FILE="${KNSV_FILE_DIRECTORY}/${KNSV_FILE_NAME}"
-
-EXPECTED_SHA256="e94e7f6b202c9a8cadc6bf70f7a671da2c6bd53000a1944944809d325592f9b4"
+EXPECTED_SHA256="82563b31271844f96d5ff4e7a39d3af87b5e24910f9f5c32fcc067dfd2157aee"
 
 function check_konsave_installation {
     echo "Checking konsave installation..."
@@ -64,10 +63,9 @@ function setup_konsave {
     konsave --apply desktop
 }
 
-function move_klassy_configs {
-    mkdir -p ~/.config/klassy
-    cp /etc/bluebuild/theme/klassy/* ~/.config/klassy
+function move_wallpaper {
+    cp /etc/bluebuild/userspace/wallpaper/default.png ~/Desktop/default.png
 }
 
 setup_konsave
-move_klassy_configs
+move_wallpaper

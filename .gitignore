@@ -6,3 +6,5 @@ cosign.private
 files/theme/konsave/desktop.knsv
 design.md
 files/userspace/ansible/*
+files/userspace/ansible
+files/userspace/konsave/konsave.knsv

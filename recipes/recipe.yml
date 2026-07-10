@@ -11,12 +11,6 @@ modules:
       - source: scripts
         destination: /etc/bluebuild/scripts
 
-      - source: distrobox
-        destination: /etc/bluebuild/distrobox
-
-      - source: theme
-        destination: /etc/bluebuild/theme
-
       - source: userspace
         destination: /etc/bluebuild/userspace
 
