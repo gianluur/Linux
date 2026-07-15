@@ -6,4 +6,4 @@ if podman container exists "$CONTAINER_NAME"; then
     exit 0
 fi
 
-distrobox assemble create --file /etc/bluebuild/distrobox/utilities.ini
+distrobox assemble create --file /etc/bluebuild/userspace/distrobox/utilities.ini

@@ -5,7 +5,6 @@ echo "========================================="
 echo "   🚀 Initializing Userspace Setup...   "
 echo "========================================="
 
-/etc/bluebuild/scripts/setup_desktop.sh
 /etc/bluebuild/scripts/setup_distrobox.sh
 
 # # 1. Ensure your central Configuration directory exists

@@ -11,12 +11,6 @@ modules:
       - source: scripts
         destination: /etc/bluebuild/scripts
 
-      - source: userspace
-        destination: /etc/bluebuild/userspace
-
-      - source: autostart/setup-userspace.desktop
-        destination: /etc/xdg/autostart/setup-userspace.desktop
-
   - type: dnf
     repos:
       files:
@@ -35,7 +29,6 @@ modules:
         - kvantum
         - kitty
         - nwg-look
-        - adw-gtk3-theme 
         - kde-partitionmanager 
         - zsh
         - wl-clipboard

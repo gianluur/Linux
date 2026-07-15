@@ -3,7 +3,7 @@ set -euo pipefail
 
 export PATH="$HOME/.local/bin:$PATH"
 
-KNSV_PARTS_DIRECTORY="/etc/bluebuild/konsave"
+KNSV_PARTS_DIRECTORY="/etc/bluebuild/userspace/konsave"
 KNSV_FILE_DIRECTORY="/tmp/bluebuild/konsave"
 KNSV_FILE_NAME="konsave.knsv"
 KNSV_FILE="${KNSV_FILE_DIRECTORY}/${KNSV_FILE_NAME}"
