@@ -10,6 +10,9 @@ modules:
     files:
       - source: scripts
         destination: /etc/bluebuild/scripts
+      
+      - source: autostart/setup-userspace.desktop
+        destination: /etc/xdg/autostart/setup-userspace.desktop
 
   - type: dnf
     repos:
