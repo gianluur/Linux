@@ -25,7 +25,6 @@ modules:
 
     install:
       packages:
-        - ansible
         - kvantum
         - kitty
         - nwg-look
@@ -39,12 +38,12 @@ modules:
         - kwin-effects-better-blur-dx-x11
         - distrobox
         - starship
-        - python3-pip
         - plasma-panel-colorizer
         - plasma-discover
 
     remove:
       packages:
+        #KDE Debloating
         - kde-gtk-config
         - konsole
         - kwrite
@@ -52,6 +51,40 @@ modules:
         - filelight
         - krfb
         - krdc
+        
+        # Bazzite Debloating
+        - waydroid
+        - cage
+        - wlr-randr
+        - lato-fonts
+        - fira-code-fonts
+        - nerd-fonts
+        - plasma-oxygen
+        - oxygen-icon-theme
+        - gnome-disk-utility
+        - fastfetch
+        - stress-ng
+        - mangohud
+        - powerbuttond
+        - sdgyrodsu
+        - btop
+        - duf
+        - glow
+        - gum
+        - jupiter-fan-control
+        - jupiter-hw-support-btrfs
+        - jupiter-sd-mounting-btrfs
+        - steamdeck-dsp
+        - steamdeck-kde-presets-desktop
+        - galileo-mura
+        - vpower
+        - steamos-manager-powerstation
+        - steamos-manager-powerstation-gamescope-session-plus
+        - steam-notif-daemon
+        - inputplumber
+        - gamescope-session-ogui-steam
+        - ds-inhibit
+
 
   - type: default-flatpaks
     configurations:
