@@ -1,1 +1,1 @@
-sed -i 's/^SHELL=.*/SHELL=\/bin\/zsh/' /etc/default/useradd
+chsh -s /usr/bin/zsh
