@@ -17,6 +17,10 @@ modules:
       - source: autostart/setup-userspace.desktop
         destination: /etc/xdg/autostart/setup-userspace.desktop
 
+  - type: gschema-overrides
+    include:
+      - zz1-window-buttons.gschema.override
+
   - type: dnf
     repos:
       files:
