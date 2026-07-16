@@ -10,7 +10,7 @@ modules:
     files:
       - source: system
         destination: /
-gi
+
       - source: scripts
         destination: /etc/bluebuild/scripts
 
@@ -118,3 +118,7 @@ gi
         - JetBrainsMono
       google-fonts:              
         - Inter
+
+  - type: script
+    scripts:
+      - setup_shell.sh
