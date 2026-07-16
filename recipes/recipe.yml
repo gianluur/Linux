@@ -10,7 +10,7 @@ modules:
     files:
       - source: system
         destination: /
-
+gi
       - source: scripts
         destination: /etc/bluebuild/scripts
 
@@ -73,7 +73,6 @@ modules:
         - sdgyrodsu
         - btop
         - duf
-        - glow
         - gum
         - jupiter-fan-control
         - jupiter-hw-support-btrfs
@@ -92,7 +91,6 @@ modules:
   - type: default-flatpaks
     configurations:
       - scope: user
-        notify: true
         install:
           # Desktop Essentials
           - app.zen_browser.zen # Browser
