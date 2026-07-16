@@ -8,9 +8,12 @@ image-version: latest
 modules:
   - type: files
     files:
+      - source: system
+        destination: /
+
       - source: scripts
         destination: /etc/bluebuild/scripts
-      
+
       - source: autostart/setup-userspace.desktop
         destination: /etc/xdg/autostart/setup-userspace.desktop
 
@@ -42,7 +45,6 @@ modules:
         - distrobox
         - starship
         - plasma-panel-colorizer
-        - plasma-discover
 
     remove:
       packages:
@@ -67,7 +69,6 @@ modules:
         - gnome-disk-utility
         - fastfetch
         - stress-ng
-        - mangohud
         - powerbuttond
         - sdgyrodsu
         - btop
@@ -87,7 +88,6 @@ modules:
         - inputplumber
         - gamescope-session-ogui-steam
         - ds-inhibit
-
 
   - type: default-flatpaks
     configurations:
