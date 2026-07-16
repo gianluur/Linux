@@ -20,7 +20,7 @@ if [[ ! -f "${HOME}/.zinit/bin/zinit.zsh" ]]; then
 fi
 source "${HOME}/.zinit/bin/zinit.zsh" 2>/dev/null
 
-zinit ice wait lucid depth=1        # load after prompt, shallow clone
+zinit ice wait lucid depth=1
 zinit light zsh-users/zsh-autosuggestions
 
 zinit ice wait lucid depth=1
