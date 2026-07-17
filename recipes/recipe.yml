@@ -123,3 +123,12 @@ modules:
         - JetBrainsMono
       google-fonts:              
         - Inter
+
+  - type: script
+    scripts:
+      - setup_shell.sh
+
+  - type: systemd
+    user:
+      disabled:
+        - geoclue.service

@@ -7,12 +7,6 @@ echo "========================================="
 
 echo "========================================="
 echo "     Configuring Distrobox...     "
-echo "========================================="
+echo "========================================="`
 
 /etc/bluebuild/scripts/setup_distrobox.sh
-
-echo "========================================="
-echo "     Changing Shell...     "
-echo "========================================="
-
-/etc/bluebuild/scripts/setup_shell.sh
