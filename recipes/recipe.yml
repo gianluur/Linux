@@ -34,7 +34,7 @@ modules:
 
     install:
       packages:
-        # Modern utilities
+        # Utilities & Essentials
         - fastfetch
         - yazi
         - eza
@@ -52,21 +52,21 @@ modules:
         - wget
         - curl
         - git
-
-        
-        - kvantum
         - kitty
+        - zsh
+        - starship
+        - distrobox
+
+        # KDE Stuff
+        - kvantum
         - nwg-look
         - kde-partitionmanager 
-        - zsh
         - wl-clipboard
         - kde-connect
         - sbsigntools
         - klassy
         - kwin-effects-better-blur-dx
         - kwin-effects-better-blur-dx-x11
-        - distrobox
-        - starship
         - plasma-panel-colorizer
 
     remove:
