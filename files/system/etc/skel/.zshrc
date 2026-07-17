@@ -1,6 +1,3 @@
-# ------------------------------------------------------------------------
-# 1. Basic shell options (speed & hygiene)
-# ------------------------------------------------------------------------
 setopt NO_BG_NICE           # don't nice background tasks
 setopt NO_HUP               # don't send HUP to background jobs
 setopt NO_BEEP              # beep off
@@ -13,6 +10,11 @@ setopt INC_APPEND_HISTORY   # append to history immediately
 HISTFILE="${HOME}/.zsh_history"
 HISTSIZE=10000
 SAVEHIST=10000
+
+# Helps avoid unnecessary prompts during setup
+if [[ ! -o interactive ]]; then
+    setopt ZSH_DISABLE_COMPFIX
+fi
 
 if [[ ! -f "${HOME}/.zinit/bin/zinit.zsh" ]]; then
     command -v git >/dev/null && \
