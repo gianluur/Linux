@@ -14,9 +14,6 @@ modules:
       - source: scripts
         destination: /etc/bluebuild/scripts
 
-      - source: autostart/setup-userspace.desktop
-        destination: /etc/xdg/autostart/setup-userspace.desktop
-
   - type: gschema-overrides
     include:
       - zz1-window-buttons.gschema.override
@@ -33,9 +30,30 @@ modules:
           - infinality/kwin-effects-better-blur-dx
           - atim/starship
           - lionheartp/Hyprland
+          - lihaohong/yazi
 
     install:
       packages:
+        # Modern utilities
+        - fastfetch
+        - yazi
+        - eza
+        - zoxide
+        - bat
+        - ripgrep
+        - fd-find
+        - fzf
+        - tldr
+        - btop
+        - gh 
+        - jq
+        - yq
+        - unzip
+        - wget
+        - curl
+        - git
+
+        
         - kvantum
         - kitty
         - nwg-look
