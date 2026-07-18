@@ -113,7 +113,6 @@ modules:
 
   - type: default-flatpaks
     configurations:
-      - scope: user
         install:
           # Desktop Essentials
           - app.zen_browser.zen # Browser

@@ -1,0 +1,25 @@
+MenuBar=Disabled
+
+[General]
+LastUsedVersion=210800
+SideBarPage=operations
+
+[ImageView]
+AnimationMethod=DocumentView::GLAnimation
+ThumbnailSplitterSizes=460,132
+
+[MainWindow]
+MenuBar=Disabled
+
+[Recent Files]
+File1[$e]=$HOME/Downloads/wallhaven-9or96k_1920x1080.png
+File2[$e]=$HOME/Downloads/wallhaven-7jr8jv_1920x1080.png
+Name1[$e]=wallhaven-9or96k_1920x1080.png
+Name2[$e]=wallhaven-7jr8jv_1920x1080.png
+
+[SideBar]
+InformationSplitterSizes=211,244
+SideBarSplitterSizes=225,693
+
+[ThumbnailView]
+AutoplayVideos=true

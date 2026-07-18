@@ -10,6 +10,9 @@ setopt HIST_REDUCE_BLANKS   # remove superfluous blanks from history items
 setopt HIST_SAVE_NO_DUPS    # don't save duplicates
 setopt INC_APPEND_HISTORY   # append to history immediately
 
+bindkey '^[[1;5C' forward-word
+bindkey '^[[1;5D' backward-word
+
 # ===============================
 #   History settings
 # ===============================
@@ -42,8 +45,6 @@ source "${HOME}/.zinit/bin/zinit.zsh" 2>/dev/null
 # ===============================
 #   Plugins (loaded asynchronously)
 # ===============================
-echo "⏳ Loading plugins (autosuggestions & syntax highlighting)..."
-
 zinit ice wait lucid depth=1
 zinit light zsh-users/zsh-autosuggestions
 
