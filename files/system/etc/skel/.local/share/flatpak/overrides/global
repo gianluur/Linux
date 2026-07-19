@@ -1,0 +1,6 @@
+[Context]
+filesystems=~/.themes:ro;
+
+[Environment]
+GTK_THEME=Tokyonight-Purple-Dark
+ICON_THEME=MacTahoe-purple

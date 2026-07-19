@@ -24,7 +24,7 @@ modules:
         add:
           - https://download.opensuse.org/repositories/home:paulmcauley/Fedora_44/home:paulmcauley.repo
           - https://download.opensuse.org/repositories/home:luisbocanegra/Fedora_44/home:luisbocanegra.repo
-          
+
       copr:
         enable:
           - infinality/kwin-effects-better-blur-dx
@@ -45,7 +45,7 @@ modules:
         - fzf
         - tldr
         - btop
-        - gh 
+        - gh
         - jq
         - yq
         - unzip
@@ -56,18 +56,18 @@ modules:
         - zsh
         - starship
         - distrobox
-        
+
         # The reason VSCode is here instead of the flatpak app section
         # is because a flatpak doesn't have system access,
         # since i want to have only one tool for modifying every file
         # i need to have vscode to have full system access to modify stuff like
         # /etc or similar locations
-        - code 
+        - code
 
         # KDE Stuff
         - kvantum
         - nwg-look
-        - kde-partitionmanager 
+        - kde-partitionmanager
         - wl-clipboard
         - kde-connect
         - sbsigntools
@@ -86,7 +86,7 @@ modules:
         - filelight
         - krfb
         - krdc
-        
+
         # Bazzite Debloating
         - waydroid
         - cage
@@ -140,13 +140,13 @@ modules:
           - com.ranfdev.DistroShelf # Distrobox handling
           - com.github.tchx84.Flatseal # Flatpak permissions
           - org.fedoraproject.MediaWriter # ISO Burner
-          - org.freedesktop.Piper # Logitech 
+          - org.freedesktop.Piper # Logitech
 
   - type: fonts
     fonts:
-      nerd-fonts:               
+      nerd-fonts:
         - JetBrainsMono
-      google-fonts:              
+      google-fonts:
         - Inter
 
   - type: script
