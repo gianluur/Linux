@@ -1,0 +1,4 @@
+/* Hide the icon on the left side of ALL callouts */
+.callout .callout-icon {
+    display: none !important;
+}

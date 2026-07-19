@@ -1,0 +1,14 @@
+{
+  "cssTheme": "Tokyo Night",
+  "nativeMenus": false,
+  "interfaceFontFamily": "Inter",
+  "monospaceFontFamily": "Inter",
+  "baseFontSize": 19,
+  "baseFontSizeAction": true,
+  "textFontFamily": "Inter",
+  "showRibbon": true,
+  "enabledCssSnippets": [
+    "hide-embed-icon"
+  ],
+  "accentColor": "#a681fe"
+}
