@@ -56,6 +56,13 @@ modules:
         - zsh
         - starship
         - distrobox
+        
+        # The reason VSCode is here instead of the flatpak app section
+        # is because a flatpak doesn't have system access,
+        # since i want to have only one tool for modifying every file
+        # i need to have vscode to have full system access to modify stuff like
+        # /etc or similar locations
+        - code 
 
         # KDE Stuff
         - kvantum
@@ -127,7 +134,6 @@ modules:
           - md.obsidian.Obsidian # Notes
           - org.localsend.localsend_app # File Sharing
           - dev.vencord.Vesktop # Discord
-          - com.vscodium.codium # Editor
 
           # Comptaibility
           - it.mijorus.gearlever # AppImage handling

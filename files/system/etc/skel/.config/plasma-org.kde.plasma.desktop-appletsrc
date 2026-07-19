@@ -4,20 +4,16 @@ RightButton;NoModifier=org.kde.contextmenu
 [ActionPlugins][1]
 RightButton;NoModifier=org.kde.contextmenu
 
-[Containments][1]
+[Containments][107]
 ItemGeometries-1920x1080=
 ItemGeometriesHorizontal=
-activityId=ab3ad593-1822-42a4-8c1e-351ba333074c
+activityId=60c6fc23-de44-41b2-b766-834c38992a39
 formfactor=0
 immutability=1
 lastScreen=0
 location=0
 plugin=org.kde.plasma.folder
 wallpaperplugin=org.kde.image
-
-[Containments][1][Wallpaper][org.kde.image][General]
-Image=file:///home/shxqow/Downloads/wallhaven-7jr8jv_1920x1080.png
-SlidePaths=/home/shxqow/.local/share/wallpapers/,/usr/share/wallpapers/
 
 [Containments][27]
 activityId=
@@ -82,7 +78,7 @@ DialogWidth=810
 
 [Containments][27][Applets][30][Configuration][General]
 iconSpacing=0
-launchers=preferred://browser,applications:org.gnome.Nautilus.desktop,applications:kitty.desktop,applications:org.kde.discover.desktop,applications:systemsettings.desktop
+launchers=file:///var/home/user/.local/share/flatpak/app/app.zen_browser.zen/current/active/export/share/applications/app.zen_browser.zen.desktop,applications:org.kde.dolphin.desktop,applications:kitty.desktop,file:///var/home/user/.local/share/flatpak/app/com.vscodium.codium/current/active/export/share/applications/com.vscodium.codium.desktop,applications:dev.vencord.Vesktop.desktop,file:///var/home/user/.local/share/flatpak/exports/share/applications/org.onlyoffice.desktopeditors.desktop,file:///var/home/user/.local/share/flatpak/exports/share/applications/md.obsidian.Obsidian.desktop,applications:systemsettings.desktop
 
 [Containments][27][Applets][64]
 immutability=1
@@ -198,9 +194,9 @@ DialogHeight=630
 DialogWidth=810
 
 [Containments][27][Applets][86][General]
-extraItems=org.kde.kdeconnect,org.kde.plasma.cameraindicator,org.kde.plasma.devicenotifier,org.kde.plasma.mediacontroller,org.kde.plasma.notifications,org.kde.plasma.bluetooth,org.kde.plasma.volume,org.kde.plasma.brightness,org.kde.plasma.clipboard,org.kde.plasma.networkmanagement,org.kde.plasma.manage-inputmethod,org.kde.merkuro.contact.applet,org.kde.plasma.printmanager,org.kde.plasma.battery,org.kde.plasma.keyboardindicator,org.kde.plasma.keyboardlayout,org.kde.kscreen
+extraItems=org.kde.kdeconnect,org.kde.plasma.cameraindicator,org.kde.plasma.devicenotifier,org.kde.plasma.mediacontroller,org.kde.plasma.notifications,org.kde.plasma.bluetooth,org.kde.plasma.volume,org.kde.plasma.brightness,org.kde.plasma.clipboard,org.kde.plasma.networkmanagement,org.kde.plasma.manage-inputmethod,org.kde.plasma.printmanager,org.kde.plasma.battery,org.kde.plasma.keyboardindicator,org.kde.plasma.keyboardlayout,org.kde.kscreen
 hiddenItems=org.kde.plasma.volume,org.kde.plasma.brightness,org.kde.plasma.clipboard,org.kde.plasma.networkmanagement,org.kde.plasma.manage-inputmethod,Discover Notifier_org.kde.DiscoverNotifier,org.kde.merkuro.contact.applet,org.kde.plasma.printmanager,org.kde.plasma.battery,org.kde.plasma.keyboardindicator,org.kde.plasma.keyboardlayout,org.kde.kscreen
-knownItems=org.kde.kdeconnect,org.kde.plasma.vault,org.kde.plasma.networkmanagement,org.kde.plasma.battery,org.kde.plasma.brightness,org.kde.plasma.cameraindicator,org.kde.plasma.clipboard,org.kde.plasma.devicenotifier,org.kde.plasma.manage-inputmethod,org.kde.plasma.mediacontroller,org.kde.plasma.notifications,org.kde.plasma.keyboardlayout,org.kde.plasma.printmanager,org.kde.plasma.keyboardindicator,org.kde.plasma.weather,org.kde.plasma.bluetooth,org.kde.kscreen,org.kde.plasma.volume,org.kde.merkuro.contact.applet
+knownItems=org.kde.kdeconnect,org.kde.plasma.vault,org.kde.plasma.networkmanagement,org.kde.plasma.battery,org.kde.plasma.brightness,org.kde.plasma.cameraindicator,org.kde.plasma.clipboard,org.kde.plasma.devicenotifier,org.kde.plasma.manage-inputmethod,org.kde.plasma.mediacontroller,org.kde.plasma.notifications,org.kde.plasma.keyboardlayout,org.kde.plasma.printmanager,org.kde.plasma.keyboardindicator,org.kde.plasma.weather,org.kde.plasma.bluetooth,org.kde.kscreen,org.kde.plasma.volume
 
 [Containments][27][General]
 AppletOrder=105;30;29;64;86;65
