@@ -1,9 +1,0 @@
-2026-07-19 16:43:44.391 [info] StorageMainService: creating application shared storage
-2026-07-19 16:43:44.474 [info] [shared storage] Creating shared storage database at '/home/shxqow/.vscode-shared/sharedStorage/state.vscdb' (wasCreated: false)
-2026-07-19 16:43:44.475 [info] [shared storage] Initializing fallback application storage (path: /home/shxqow/.config/Code/User/globalStorage/state.vscdb)
-2026-07-19 16:43:44.523 [info] [shared storage] Fallback application storage initialized with 104 items
-2026-07-19 16:43:44.525 [info] update#setState idle
-2026-07-19 16:44:14.527 [info] update#setState checking for updates
-2026-07-19 16:44:14.596 [info] update#setState idle
-2026-07-19 16:47:31.508 [info] Extension host with pid 33569 exited with code: 0, signal: unknown.
-2026-07-19 16:48:28.510 [info] Extension host with pid 36694 exited with code: 0, signal: unknown.
