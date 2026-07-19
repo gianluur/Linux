@@ -1,0 +1,53 @@
+2026-07-19 16:26:11.596 [info] [main] Log level: Info
+2026-07-19 16:26:11.596 [info] [main] Validating found git in: "git"
+2026-07-19 16:26:11.596 [info] [main] Using git "2.55.0" from "git"
+2026-07-19 16:26:11.596 [info] [Model][doInitialScan] Initial repository scan started
+2026-07-19 16:26:11.596 [info] > git rev-parse --show-toplevel [5ms]
+2026-07-19 16:26:11.603 [info] > git rev-parse --git-dir --git-common-dir --show-superproject-working-tree [2ms]
+2026-07-19 16:26:11.653 [info] [Model][openRepository] Opened repository (path): /home/shxqow/Documents/Projects/Shell
+2026-07-19 16:26:11.653 [info] [Model][openRepository] Opened repository (real path): /home/shxqow/Documents/Projects/Shell
+2026-07-19 16:26:11.653 [info] [Model][openRepository] Opened repository (kind): repository
+2026-07-19 16:26:11.678 [info] > git config --get --local core.virtualfilesystem [21ms]
+2026-07-19 16:26:11.678 [warning] [Git][config] git config failed: Failed to execute git
+2026-07-19 16:26:11.686 [info] > git config --get commit.template [11ms]
+2026-07-19 16:26:11.686 [info] > git rev-parse --show-toplevel [9ms]
+2026-07-19 16:26:11.696 [info] > git rev-parse --show-toplevel [1ms]
+2026-07-19 16:26:11.696 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [6ms]
+2026-07-19 16:26:11.708 [info] > git status -z -uall [7ms]
+2026-07-19 16:26:11.708 [info] > git rev-parse --show-toplevel [1ms]
+2026-07-19 16:26:11.709 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [5ms]
+2026-07-19 16:26:11.731 [info] > git config --get commit.template [2ms]
+2026-07-19 16:26:11.731 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [10ms]
+2026-07-19 16:26:11.735 [info] > git rev-parse --show-toplevel [9ms]
+2026-07-19 16:26:11.737 [info] [Model][doInitialScan] Initial repository scan completed - repositories (1), closed repositories (0), parent repositories (0), unsafe repositories (0)
+2026-07-19 16:26:11.746 [info] > git config --get --local branch.main.vscode-merge-base [12ms]
+2026-07-19 16:26:11.750 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/origin/main refs/remotes/origin/main [1ms]
+2026-07-19 16:26:11.751 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [6ms]
+2026-07-19 16:26:11.758 [info] > git status -z -uall [4ms]
+2026-07-19 16:26:11.759 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [1ms]
+2026-07-19 16:26:12.030 [info] > git check-ignore -v -z --stdin [1ms]
+2026-07-19 16:26:12.039 [info] > git show --textconv :src/expander.rs [4ms]
+2026-07-19 16:26:12.040 [info] > git ls-files --stage -- src/expander.rs [1ms]
+2026-07-19 16:26:12.044 [info] > git cat-file -s 0ef4a8f246e3c462e5834d6c22c862f9c2f34a5b [1ms]
+2026-07-19 16:26:12.074 [info] > git blame --root --incremental fbe737180824af66d9a3a7409c62470eacb68f32 -- src/expander.rs [3ms]
+2026-07-19 16:26:12.176 [info] > git check-ignore -v -z --stdin [5ms]
+2026-07-19 16:29:16.342 [info] > git config --get commit.template [5ms]
+2026-07-19 16:29:16.342 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [1ms]
+2026-07-19 16:29:16.350 [info] > git status -z -uall [4ms]
+2026-07-19 16:29:16.351 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [1ms]
+2026-07-19 16:30:27.828 [info] > git check-ignore -v -z --stdin [47ms]
+2026-07-19 16:30:27.847 [info] > git show --textconv :src/expander.rs [8ms]
+2026-07-19 16:30:27.848 [info] > git ls-files --stage -- src/expander.rs [3ms]
+2026-07-19 16:30:27.855 [info] > git cat-file -s 0ef4a8f246e3c462e5834d6c22c862f9c2f34a5b [2ms]
+2026-07-19 16:33:50.966 [info] > git check-ignore -v -z --stdin [37ms]
+2026-07-19 16:33:51.001 [info] > git show --textconv :src/expander.rs [8ms]
+2026-07-19 16:33:51.002 [info] > git ls-files --stage -- src/expander.rs [2ms]
+2026-07-19 16:33:51.008 [info] > git cat-file -s 0ef4a8f246e3c462e5834d6c22c862f9c2f34a5b [1ms]
+2026-07-19 16:35:02.567 [info] > git check-ignore -v -z --stdin [1ms]
+2026-07-19 16:35:02.576 [info] > git show --textconv :src/expander.rs [4ms]
+2026-07-19 16:35:02.577 [info] > git ls-files --stage -- src/expander.rs [1ms]
+2026-07-19 16:35:02.581 [info] > git cat-file -s 0ef4a8f246e3c462e5834d6c22c862f9c2f34a5b [1ms]
+2026-07-19 16:40:29.554 [info] > git check-ignore -v -z --stdin [1ms]
+2026-07-19 16:40:29.564 [info] > git show --textconv :src/expander.rs [4ms]
+2026-07-19 16:40:29.565 [info] > git ls-files --stage -- src/expander.rs [1ms]
+2026-07-19 16:40:29.570 [info] > git cat-file -s 0ef4a8f246e3c462e5834d6c22c862f9c2f34a5b [1ms]

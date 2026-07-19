@@ -1,0 +1,89 @@
+{
+    "telemetry.sqmId": "",
+    "telemetry.machineId": "a20c1613602b4a9b32d55c2c64230d41f7486e9ea6c98901107bf4217ec91492",
+    "telemetry.devDeviceId": "7e5318a7-c16a-4e37-9321-36f35a1ef069",
+    "backupWorkspaces": {
+        "workspaces": [],
+        "folders": [
+            {
+                "folderUri": "file:///home/shxqow/Documents/Projects/Linux"
+            }
+        ],
+        "emptyWindows": []
+    },
+    "windowControlHeight": 36,
+    "profileAssociations": {
+        "workspaces": {
+            "file:///home/shxqow/Documents/Projects/Shell": "__default__profile__",
+            "file:///home/shxqow/Documents/Projects/Linux": "__default__profile__"
+        },
+        "emptyWindows": {}
+    },
+    "theme": "vs-dark",
+    "themeBackground": "#1a1b26",
+    "windowSplash": {
+        "zoomLevel": 1,
+        "baseTheme": "vs-dark",
+        "colorInfo": {
+            "foreground": "#787c99",
+            "background": "#1a1b26",
+            "editorBackground": "#1a1b26",
+            "titleBarBackground": "#16161e",
+            "titleBarBorder": "#101014",
+            "activityBarBackground": "#16161e",
+            "activityBarBorder": "#16161e",
+            "sideBarBackground": "#16161e",
+            "sideBarBorder": "#101014",
+            "panelBackground": "#16161e",
+            "editorGroupBorder": "#101014",
+            "agentsPanelBackground": "#16161e",
+            "agentsPanelBorder": "rgba(120, 124, 153, 0.15)",
+            "statusBarBackground": "#16161e",
+            "statusBarBorder": "#101014",
+            "statusBarNoFolderBackground": "#16161e",
+            "windowBorder": "#0d0f17"
+        },
+        "layoutInfo": {
+            "sideBarSide": "right",
+            "editorPartMinWidth": 220,
+            "titleBarHeight": 30,
+            "activityBarWidth": 48,
+            "sideBarWidth": 238,
+            "auxiliaryBarWidth": 0,
+            "statusBarHeight": 22,
+            "windowBorder": false,
+            "modernUI": false
+        }
+    },
+    "windowsState": {
+        "lastActiveWindow": {
+            "folder": "file:///home/shxqow/Documents/Projects/Linux",
+            "backupPath": "/home/shxqow/.config/Code/Backups/0e25e336cafa528ffc63d0d954efe5ad",
+            "uiState": {
+                "mode": 0,
+                "x": 16,
+                "y": 10,
+                "width": 1920,
+                "height": 1080,
+                "zoomLevel": 1
+            }
+        },
+        "openedWindows": []
+    },
+    "windowSplashWorkspaceOverride": {
+        "layoutInfo": {
+            "sideBarWidth": 238,
+            "auxiliaryBarWidth": 239,
+            "workspaces": {
+                "d3233d3a825a6a43ab34f429d35b3ef4": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": false
+                },
+                "4e45698a54acae645c780d37a89c529a": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": false
+                }
+            }
+        }
+    }
+}

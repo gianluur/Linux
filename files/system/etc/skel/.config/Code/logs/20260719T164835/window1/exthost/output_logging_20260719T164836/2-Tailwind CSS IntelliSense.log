@@ -1,0 +1,147 @@
+Locating server…
+Checking if /home/shxqow/Documents/Projects/Linux/files/system/etc/skel/.vscode/extensions/ms-vscode.hexeditor-1.11.1/dist/editor.css may be Tailwind-related…
+Checking if /home/shxqow/Documents/Projects/Linux/files/system/etc/skel/.vscode/extensions/ms-vscode.hexeditor-1.11.1/dist/inspector.css may be Tailwind-related…
+Checking if /home/shxqow/Documents/Projects/Linux/files/system/etc/skel/.vscode/extensions/ms-vscode.hexeditor-1.11.1/node_modules/@vscode/codicons/dist/codicon.css may be Tailwind-related…
+Checking if /home/shxqow/Documents/Projects/Linux/files/system/etc/skel/.vscode/extensions/redhat.vscode-xml-0.29.3-linux-x64/webview-resources/document.css may be Tailwind-related…
+Checking if /home/shxqow/Documents/Projects/Linux/files/system/etc/skel/.vscode/extensions/redhat.vscode-xml-0.29.3-linux-x64/webview-resources/highlight.css may be Tailwind-related…
+Checking if /home/shxqow/Documents/Projects/Linux/files/system/etc/skel/.vscode/extensions/redhat.vscode-xml-0.29.3-linux-x64/webview-resources/markdown.css may be Tailwind-related…
+Checking if /home/shxqow/Documents/Projects/Linux/files/system/etc/skel/.vscode/extensions/yzhang.markdown-all-in-one-3.6.3/media/checkbox.css may be Tailwind-related…
+Checking if /home/shxqow/Documents/Projects/Linux/files/system/etc/skel/.vscode/extensions/yzhang.markdown-all-in-one-3.6.3/node_modules/katex/dist/katex.min.css may be Tailwind-related…
+Checking if /home/shxqow/Documents/Projects/Linux/files/system/etc/skel/.vscode/extensions/yzhang.markdown-all-in-one-3.6.3/node_modules/markdown-it-github-alerts/styles/github-base.css may be Tailwind-related…
+Checking if /home/shxqow/Documents/Projects/Linux/files/system/etc/skel/.vscode/extensions/yzhang.markdown-all-in-one-3.6.3/node_modules/markdown-it-github-alerts/styles/github-colors-dark-class.css may be Tailwind-related…
+Checking if /home/shxqow/Documents/Projects/Linux/files/system/etc/skel/.vscode/extensions/yzhang.markdown-all-in-one-3.6.3/node_modules/markdown-it-github-alerts/styles/github-colors-dark-media.css may be Tailwind-related…
+Checking if /home/shxqow/Documents/Projects/Linux/files/system/etc/skel/.vscode/extensions/yzhang.markdown-all-in-one-3.6.3/node_modules/markdown-it-github-alerts/styles/github-colors-light.css may be Tailwind-related…
+Booting server...
+Setting up server…
+Listening for messages…
+[Error - 4:50:19 PM] e: failed to resolve "extends":"../tsconfig.base.json" in /home/shxqow/Documents/Projects/Linux/files/system/etc/skel/.vscode/extensions/ms-vscode-remote.remote-containers-0.466.0/.eslint-plugin-local/tsconfig.json
+    at cbe (/home/shxqow/.vscode/extensions/bradlc.vscode-tailwindcss-0.16.0/dist/tailwindServer.js:3626:2655)
+    at oU (/home/shxqow/.vscode/extensions/bradlc.vscode-tailwindcss-0.16.0/dist/tailwindServer.js:3626:2093)
+    at sU (/home/shxqow/.vscode/extensions/bradlc.vscode-tailwindcss-0.16.0/dist/tailwindServer.js:3626:647)
+    at async fbe (/home/shxqow/.vscode/extensions/bradlc.vscode-tailwindcss-0.16.0/dist/tailwindServer.js:3626:5997)
+    at async _be (/home/shxqow/.vscode/extensions/bradlc.vscode-tailwindcss-0.16.0/dist/tailwindServer.js:3626:5230)
+    at async cU (/home/shxqow/.vscode/extensions/bradlc.vscode-tailwindcss-0.16.0/dist/tailwindServer.js:3626:7260)
+    at async QD._initFolder (/home/shxqow/.vscode/extensions/bradlc.vscode-tailwindcss-0.16.0/dist/tailwindServer.js:3626:12551)
+    at async Promise.allSettled (index 0)
+    at async QD._init (/home/shxqow/.vscode/extensions/bradlc.vscode-tailwindcss-0.16.0/dist/tailwindServer.js:3626:10774)
+    at async QD.init (/home/shxqow/.vscode/extensions/bradlc.vscode-tailwindcss-0.16.0/dist/tailwindServer.js:3626:9632) {
+  code: 'EXTENDS_RESOLVE',
+  cause: Error: Can't resolve '../tsconfig.base.json' in '/home/shxqow/Documents/Projects/Linux/files/system/etc/skel/.vscode/extensions/ms-vscode-remote.remote-containers-0.466.0/.eslint-plugin-local'
+      at H (/home/shxqow/.vscode/extensions/bradlc.vscode-tailwindcss-0.16.0/dist/tailwindServer.js:130:7155)
+      at /home/shxqow/.vscode/extensions/bradlc.vscode-tailwindcss-0.16.0/dist/tailwindServer.js:131:713
+      at /home/shxqow/.vscode/extensions/bradlc.vscode-tailwindcss-0.16.0/dist/tailwindServer.js:134:405
+      at eval (eval at create (/home/shxqow/.vscode/extensions/bradlc.vscode-tailwindcss-0.16.0/dist/tailwindServer.js:5:78), <anonymous>:15:1)
+      at /home/shxqow/.vscode/extensions/bradlc.vscode-tailwindcss-0.16.0/dist/tailwindServer.js:134:405
+      at eval (eval at create (/home/shxqow/.vscode/extensions/bradlc.vscode-tailwindcss-0.16.0/dist/tailwindServer.js:5:78), <anonymous>:27:1)
+      at /home/shxqow/.vscode/extensions/bradlc.vscode-tailwindcss-0.16.0/dist/tailwindServer.js:134:7944
+      at /home/shxqow/.vscode/extensions/bradlc.vscode-tailwindcss-0.16.0/dist/tailwindServer.js:134:405
+      at eval (eval at create (/home/shxqow/.vscode/extensions/bradlc.vscode-tailwindcss-0.16.0/dist/tailwindServer.js:5:78), <anonymous>:15:1)
+      at /home/shxqow/.vscode/extensions/bradlc.vscode-tailwindcss-0.16.0/dist/tailwindServer.js:134:405 {
+    details: "resolve '../tsconfig.base.json' in '/home/shxqow/Documents/Projects/Linux/files/system/etc/skel/.vscode/extensions/ms-vscode-remote.remote-containers-0.466.0/.eslint-plugin-local'\n" +
+      '  using description file: /home/shxqow/Documents/Projects/Linux/files/system/etc/skel/.vscode/extensions/ms-vscode-remote.remote-containers-0.466.0/package.json (relative path: ./.eslint-plugin-local)\n' +
+      '    using description file: /home/shxqow/Documents/Projects/Linux/files/system/etc/skel/.vscode/extensions/ms-vscode-remote.remote-containers-0.466.0/package.json (relative path: ./tsconfig.base.json)\n' +
+      '      no extension\n' +
+      "        /home/shxqow/Documents/Projects/Linux/files/system/etc/skel/.vscode/extensions/ms-vscode-remote.remote-containers-0.466.0/tsconfig.base.json doesn't exist\n" +
+      '      .js\n' +
+      "        /home/shxqow/Documents/Projects/Linux/files/system/etc/skel/.vscode/extensions/ms-vscode-remote.remote-containers-0.466.0/tsconfig.base.json.js doesn't exist\n" +
+      '      .json\n' +
+      "        /home/shxqow/Documents/Projects/Linux/files/system/etc/skel/.vscode/extensions/ms-vscode-remote.remote-containers-0.466.0/tsconfig.base.json.json doesn't exist\n" +
+      '      .node\n' +
+      "        /home/shxqow/Documents/Projects/Linux/files/system/etc/skel/.vscode/extensions/ms-vscode-remote.remote-containers-0.466.0/tsconfig.base.json.node doesn't exist\n" +
+      '      as directory\n' +
+      "        /home/shxqow/Documents/Projects/Linux/files/system/etc/skel/.vscode/extensions/ms-vscode-remote.remote-containers-0.466.0/tsconfig.base.json doesn't exist"
+  },
+  tsconfigFile: '/home/shxqow/Documents/Projects/Linux/files/system/etc/skel/.vscode/extensions/ms-vscode-remote.remote-containers-0.466.0/.eslint-plugin-local/tsconfig.json'
+}
+[Error - 4:50:19 PM] e: failed to resolve "extends":"../tsconfig.base.json" in /home/shxqow/Documents/Projects/Linux/files/system/etc/skel/.vscode/extensions/ms-vscode-remote.remote-containers-0.466.0/dev-containers-user-cli/tsconfig.json
+    at cbe (/home/shxqow/.vscode/extensions/bradlc.vscode-tailwindcss-0.16.0/dist/tailwindServer.js:3626:2655)
+    at oU (/home/shxqow/.vscode/extensions/bradlc.vscode-tailwindcss-0.16.0/dist/tailwindServer.js:3626:2093)
+    at sU (/home/shxqow/.vscode/extensions/bradlc.vscode-tailwindcss-0.16.0/dist/tailwindServer.js:3626:647)
+    at async fbe (/home/shxqow/.vscode/extensions/bradlc.vscode-tailwindcss-0.16.0/dist/tailwindServer.js:3626:5997)
+    at async _be (/home/shxqow/.vscode/extensions/bradlc.vscode-tailwindcss-0.16.0/dist/tailwindServer.js:3626:5230)
+    at async cU (/home/shxqow/.vscode/extensions/bradlc.vscode-tailwindcss-0.16.0/dist/tailwindServer.js:3626:7260)
+    at async QD._initFolder (/home/shxqow/.vscode/extensions/bradlc.vscode-tailwindcss-0.16.0/dist/tailwindServer.js:3626:12551)
+    at async Promise.allSettled (index 0)
+    at async QD._init (/home/shxqow/.vscode/extensions/bradlc.vscode-tailwindcss-0.16.0/dist/tailwindServer.js:3626:10774)
+    at async QD.init (/home/shxqow/.vscode/extensions/bradlc.vscode-tailwindcss-0.16.0/dist/tailwindServer.js:3626:9632) {
+  code: 'EXTENDS_RESOLVE',
+  cause: Error: Can't resolve '../tsconfig.base.json' in '/home/shxqow/Documents/Projects/Linux/files/system/etc/skel/.vscode/extensions/ms-vscode-remote.remote-containers-0.466.0/dev-containers-user-cli'
+      at H (/home/shxqow/.vscode/extensions/bradlc.vscode-tailwindcss-0.16.0/dist/tailwindServer.js:130:7155)
+      at /home/shxqow/.vscode/extensions/bradlc.vscode-tailwindcss-0.16.0/dist/tailwindServer.js:131:713
+      at /home/shxqow/.vscode/extensions/bradlc.vscode-tailwindcss-0.16.0/dist/tailwindServer.js:134:405
+      at eval (eval at create (/home/shxqow/.vscode/extensions/bradlc.vscode-tailwindcss-0.16.0/dist/tailwindServer.js:5:78), <anonymous>:15:1)
+      at /home/shxqow/.vscode/extensions/bradlc.vscode-tailwindcss-0.16.0/dist/tailwindServer.js:134:405
+      at eval (eval at create (/home/shxqow/.vscode/extensions/bradlc.vscode-tailwindcss-0.16.0/dist/tailwindServer.js:5:78), <anonymous>:27:1)
+      at /home/shxqow/.vscode/extensions/bradlc.vscode-tailwindcss-0.16.0/dist/tailwindServer.js:134:7944
+      at /home/shxqow/.vscode/extensions/bradlc.vscode-tailwindcss-0.16.0/dist/tailwindServer.js:134:405
+      at eval (eval at create (/home/shxqow/.vscode/extensions/bradlc.vscode-tailwindcss-0.16.0/dist/tailwindServer.js:5:78), <anonymous>:15:1)
+      at /home/shxqow/.vscode/extensions/bradlc.vscode-tailwindcss-0.16.0/dist/tailwindServer.js:134:405 {
+    details: "resolve '../tsconfig.base.json' in '/home/shxqow/Documents/Projects/Linux/files/system/etc/skel/.vscode/extensions/ms-vscode-remote.remote-containers-0.466.0/dev-containers-user-cli'\n" +
+      '  using description file: /home/shxqow/Documents/Projects/Linux/files/system/etc/skel/.vscode/extensions/ms-vscode-remote.remote-containers-0.466.0/dev-containers-user-cli/package.json (relative path: .)\n' +
+      '    using description file: /home/shxqow/Documents/Projects/Linux/files/system/etc/skel/.vscode/extensions/ms-vscode-remote.remote-containers-0.466.0/package.json (relative path: ./tsconfig.base.json)\n' +
+      '      no extension\n' +
+      "        /home/shxqow/Documents/Projects/Linux/files/system/etc/skel/.vscode/extensions/ms-vscode-remote.remote-containers-0.466.0/tsconfig.base.json doesn't exist\n" +
+      '      .js\n' +
+      "        /home/shxqow/Documents/Projects/Linux/files/system/etc/skel/.vscode/extensions/ms-vscode-remote.remote-containers-0.466.0/tsconfig.base.json.js doesn't exist\n" +
+      '      .json\n' +
+      "        /home/shxqow/Documents/Projects/Linux/files/system/etc/skel/.vscode/extensions/ms-vscode-remote.remote-containers-0.466.0/tsconfig.base.json.json doesn't exist\n" +
+      '      .node\n' +
+      "        /home/shxqow/Documents/Projects/Linux/files/system/etc/skel/.vscode/extensions/ms-vscode-remote.remote-containers-0.466.0/tsconfig.base.json.node doesn't exist\n" +
+      '      as directory\n' +
+      "        /home/shxqow/Documents/Projects/Linux/files/system/etc/skel/.vscode/extensions/ms-vscode-remote.remote-containers-0.466.0/tsconfig.base.json doesn't exist"
+  },
+  tsconfigFile: '/home/shxqow/Documents/Projects/Linux/files/system/etc/skel/.vscode/extensions/ms-vscode-remote.remote-containers-0.466.0/dev-containers-user-cli/tsconfig.json'
+}
+[Error - 4:50:19 PM] e: failed to resolve "extends":"../../tsconfig.base.json" in /home/shxqow/Documents/Projects/Linux/files/system/etc/skel/.vscode/extensions/ms-vscode-remote.remote-containers-0.466.0/dev-containers-user-cli/test/tsconfig.json
+    at cbe (/home/shxqow/.vscode/extensions/bradlc.vscode-tailwindcss-0.16.0/dist/tailwindServer.js:3626:2655)
+    at oU (/home/shxqow/.vscode/extensions/bradlc.vscode-tailwindcss-0.16.0/dist/tailwindServer.js:3626:2093)
+    at sU (/home/shxqow/.vscode/extensions/bradlc.vscode-tailwindcss-0.16.0/dist/tailwindServer.js:3626:647)
+    at async fbe (/home/shxqow/.vscode/extensions/bradlc.vscode-tailwindcss-0.16.0/dist/tailwindServer.js:3626:5997)
+    at async _be (/home/shxqow/.vscode/extensions/bradlc.vscode-tailwindcss-0.16.0/dist/tailwindServer.js:3626:5230)
+    at async cU (/home/shxqow/.vscode/extensions/bradlc.vscode-tailwindcss-0.16.0/dist/tailwindServer.js:3626:7260)
+    at async QD._initFolder (/home/shxqow/.vscode/extensions/bradlc.vscode-tailwindcss-0.16.0/dist/tailwindServer.js:3626:12551)
+    at async Promise.allSettled (index 0)
+    at async QD._init (/home/shxqow/.vscode/extensions/bradlc.vscode-tailwindcss-0.16.0/dist/tailwindServer.js:3626:10774)
+    at async QD.init (/home/shxqow/.vscode/extensions/bradlc.vscode-tailwindcss-0.16.0/dist/tailwindServer.js:3626:9632) {
+  code: 'EXTENDS_RESOLVE',
+  cause: Error: Can't resolve '../../tsconfig.base.json' in '/home/shxqow/Documents/Projects/Linux/files/system/etc/skel/.vscode/extensions/ms-vscode-remote.remote-containers-0.466.0/dev-containers-user-cli/test'
+      at H (/home/shxqow/.vscode/extensions/bradlc.vscode-tailwindcss-0.16.0/dist/tailwindServer.js:130:7155)
+      at /home/shxqow/.vscode/extensions/bradlc.vscode-tailwindcss-0.16.0/dist/tailwindServer.js:131:713
+      at /home/shxqow/.vscode/extensions/bradlc.vscode-tailwindcss-0.16.0/dist/tailwindServer.js:134:405
+      at eval (eval at create (/home/shxqow/.vscode/extensions/bradlc.vscode-tailwindcss-0.16.0/dist/tailwindServer.js:5:78), <anonymous>:15:1)
+      at /home/shxqow/.vscode/extensions/bradlc.vscode-tailwindcss-0.16.0/dist/tailwindServer.js:134:405
+      at eval (eval at create (/home/shxqow/.vscode/extensions/bradlc.vscode-tailwindcss-0.16.0/dist/tailwindServer.js:5:78), <anonymous>:27:1)
+      at /home/shxqow/.vscode/extensions/bradlc.vscode-tailwindcss-0.16.0/dist/tailwindServer.js:134:7944
+      at /home/shxqow/.vscode/extensions/bradlc.vscode-tailwindcss-0.16.0/dist/tailwindServer.js:134:405
+      at eval (eval at create (/home/shxqow/.vscode/extensions/bradlc.vscode-tailwindcss-0.16.0/dist/tailwindServer.js:5:78), <anonymous>:15:1)
+      at /home/shxqow/.vscode/extensions/bradlc.vscode-tailwindcss-0.16.0/dist/tailwindServer.js:134:405 {
+    details: "resolve '../../tsconfig.base.json' in '/home/shxqow/Documents/Projects/Linux/files/system/etc/skel/.vscode/extensions/ms-vscode-remote.remote-containers-0.466.0/dev-containers-user-cli/test'\n" +
+      '  using description file: /home/shxqow/Documents/Projects/Linux/files/system/etc/skel/.vscode/extensions/ms-vscode-remote.remote-containers-0.466.0/dev-containers-user-cli/package.json (relative path: ./test)\n' +
+      '    using description file: /home/shxqow/Documents/Projects/Linux/files/system/etc/skel/.vscode/extensions/ms-vscode-remote.remote-containers-0.466.0/package.json (relative path: ./tsconfig.base.json)\n' +
+      '      no extension\n' +
+      "        /home/shxqow/Documents/Projects/Linux/files/system/etc/skel/.vscode/extensions/ms-vscode-remote.remote-containers-0.466.0/tsconfig.base.json doesn't exist\n" +
+      '      .js\n' +
+      "        /home/shxqow/Documents/Projects/Linux/files/system/etc/skel/.vscode/extensions/ms-vscode-remote.remote-containers-0.466.0/tsconfig.base.json.js doesn't exist\n" +
+      '      .json\n' +
+      "        /home/shxqow/Documents/Projects/Linux/files/system/etc/skel/.vscode/extensions/ms-vscode-remote.remote-containers-0.466.0/tsconfig.base.json.json doesn't exist\n" +
+      '      .node\n' +
+      "        /home/shxqow/Documents/Projects/Linux/files/system/etc/skel/.vscode/extensions/ms-vscode-remote.remote-containers-0.466.0/tsconfig.base.json.node doesn't exist\n" +
+      '      as directory\n' +
+      "        /home/shxqow/Documents/Projects/Linux/files/system/etc/skel/.vscode/extensions/ms-vscode-remote.remote-containers-0.466.0/tsconfig.base.json doesn't exist"
+  },
+  tsconfigFile: '/home/shxqow/Documents/Projects/Linux/files/system/etc/skel/.vscode/extensions/ms-vscode-remote.remote-containers-0.466.0/dev-containers-user-cli/test/tsconfig.json'
+}
+Searching for Tailwind CSS projects in the workspace's folders.
+hoist-at-import: The file '/home/shxqow/Documents/Projects/Linux/files/system/etc/skel/.themes/Tahoe-Dark/gtk-4.0/gtk-dark.css' contains @import rules after other at rules. This is invalid CSS and may cause problems with your build.
+hoist-at-import: The file '/home/shxqow/Documents/Projects/Linux/files/system/etc/skel/.themes/Tahoe-Dark/gtk-4.0/gtk.css' contains @import rules after other at rules. This is invalid CSS and may cause problems with your build.
+hoist-at-import: The file '/home/shxqow/Documents/Projects/Linux/files/system/etc/skel/.themes/Tahoe-Light/gtk-4.0/gtk-dark.css' contains @import rules after other at rules. This is invalid CSS and may cause problems with your build.
+hoist-at-import: The file '/home/shxqow/Documents/Projects/Linux/files/system/etc/skel/.themes/Tahoe-Light/gtk-4.0/gtk.css' contains @import rules after other at rules. This is invalid CSS and may cause problems with your build.
+{"tailwind":{"version":"4.1.18","features":["css-at-theme","layer:base","content-list","source-inline","source-not"],"isDefaultVersion":true},"path":"/home/shxqow/Documents/Projects/Linux/files/system/etc/skel/.config/gtk-3.0/gtk.css"}
+{"tailwind":{"version":"4.1.18","features":["css-at-theme","layer:base","content-list","source-inline","source-not"],"isDefaultVersion":true},"path":"/home/shxqow/Documents/Projects/Linux/files/system/etc/skel/.themes/Tahoe-Dark/gtk-4.0/gtk-dark.css"}
+{"tailwind":{"version":"4.1.18","features":["css-at-theme","layer:base","content-list","source-inline","source-not"],"isDefaultVersion":true},"path":"/home/shxqow/Documents/Projects/Linux/files/system/etc/skel/.themes/Tahoe-Dark/gtk-4.0/gtk.css"}
+{"tailwind":{"version":"4.1.18","features":["css-at-theme","layer:base","content-list","source-inline","source-not"],"isDefaultVersion":true},"path":"/home/shxqow/Documents/Projects/Linux/files/system/etc/skel/.themes/Tahoe-Light/gtk-4.0/gtk-dark.css"}
+{"tailwind":{"version":"4.1.18","features":["css-at-theme","layer:base","content-list","source-inline","source-not"],"isDefaultVersion":true},"path":"/home/shxqow/Documents/Projects/Linux/files/system/etc/skel/.themes/Tahoe-Light/gtk-4.0/gtk.css"}
+[Global] Creating projects: [{"folder":"/home/shxqow/Documents/Projects/Linux","config":"/home/shxqow/Documents/Projects/Linux/files/system/etc/skel/.config/gtk-3.0/gtk.css","selectors":[{"pattern":"/home/shxqow/Documents/Projects/Linux/files/system/etc/skel/.config/gtk-3.0/gtk.css","priority":0},{"pattern":"/home/shxqow/Documents/Projects/Linux/files/system/etc/skel/.config/gtk-3.0/**","priority":2},{"pattern":"/home/shxqow/Documents/Projects/Linux/**","priority":4}],"user":false,"tailwind":{"version":"4.1.18","features":["css-at-theme","layer:base","content-list","source-inline","source-not"],"isDefaultVersion":true}},{"folder":"/home/shxqow/Documents/Projects/Linux","config":"/home/shxqow/Documents/Projects/Linux/files/system/etc/skel/.themes/Tahoe-Dark/gtk-4.0/gtk-dark.css","selectors":[{"pattern":"/home/shxqow/Documents/Projects/Linux/files/system/etc/skel/.themes/Tahoe-Dark/gtk-4.0/gtk-dark.css","priority":0},{"pattern":"/home/shxqow/Documents/Projects/Linux/files/system/etc/skel/.themes/Tahoe-Dark/gtk-4.0/**","priority":2},{"pattern":"/home/shxqow/Documents/Projects/Linux/**","priority":4}],"user":false,"tailwind":{"version":"4.1.18","features":["css-at-theme","layer:base","content-list","source-inline","source-not"],"isDefaultVersion":true}},{"folder":"/home/shxqow/Documents/Projects/Linux","config":"/home/shxqow/Documents/Projects/Linux/files/system/etc/skel/.themes/Tahoe-Dark/gtk-4.0/gtk.css","selectors":[{"pattern":"/home/shxqow/Documents/Projects/Linux/files/system/etc/skel/.themes/Tahoe-Dark/gtk-4.0/gtk.css","priority":0},{"pattern":"/home/shxqow/Documents/Projects/Linux/files/system/etc/skel/.themes/Tahoe-Dark/gtk-4.0/**","priority":2},{"pattern":"/home/shxqow/Documents/Projects/Linux/**","priority":4}],"user":false,"tailwind":{"version":"4.1.18","features":["css-at-theme","layer:base","content-list","source-inline","source-not"],"isDefaultVersion":true}},{"folder":"/home/shxqow/Documents/Projects/Linux","config":"/home/shxqow/Documents/Projects/Linux/files/system/etc/skel/.themes/Tahoe-Light/gtk-4.0/gtk-dark.css","selectors":[{"pattern":"/home/shxqow/Documents/Projects/Linux/files/system/etc/skel/.themes/Tahoe-Light/gtk-4.0/gtk-dark.css","priority":0},{"pattern":"/home/shxqow/Documents/Projects/Linux/files/system/etc/skel/.themes/Tahoe-Light/gtk-4.0/**","priority":2},{"pattern":"/home/shxqow/Documents/Projects/Linux/**","priority":4}],"user":false,"tailwind":{"version":"4.1.18","features":["css-at-theme","layer:base","content-list","source-inline","source-not"],"isDefaultVersion":true}},{"folder":"/home/shxqow/Documents/Projects/Linux","config":"/home/shxqow/Documents/Projects/Linux/files/system/etc/skel/.themes/Tahoe-Light/gtk-4.0/gtk.css","selectors":[{"pattern":"/home/shxqow/Documents/Projects/Linux/files/system/etc/skel/.themes/Tahoe-Light/gtk-4.0/gtk.css","priority":0},{"pattern":"/home/shxqow/Documents/Projects/Linux/files/system/etc/skel/.themes/Tahoe-Light/gtk-4.0/**","priority":2},{"pattern":"/home/shxqow/Documents/Projects/Linux/**","priority":4}],"user":false,"tailwind":{"version":"4.1.18","features":["css-at-theme","layer:base","content-list","source-inline","source-not"],"isDefaultVersion":true}}]
+[Global] Preparing projects...
+[Global] Initializing projects...
+[Global] Initialized 0 projects

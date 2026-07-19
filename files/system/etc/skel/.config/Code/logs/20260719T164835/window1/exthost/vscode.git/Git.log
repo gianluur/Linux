@@ -1,0 +1,51 @@
+2026-07-19 16:48:38.181 [info] [main] Log level: Info
+2026-07-19 16:48:38.181 [info] [main] Validating found git in: "git"
+2026-07-19 16:48:38.181 [info] [main] Using git "2.55.0" from "git"
+2026-07-19 16:48:38.181 [info] [Model][doInitialScan] Initial repository scan started
+2026-07-19 16:48:38.181 [info] > git rev-parse --show-toplevel [11ms]
+2026-07-19 16:48:38.373 [info] > git rev-parse --git-dir --git-common-dir --show-superproject-working-tree [192ms]
+2026-07-19 16:48:38.426 [info] [Model][openRepository] Opened repository (path): /home/shxqow/Documents/Projects/Linux
+2026-07-19 16:48:38.426 [info] [Model][openRepository] Opened repository (real path): /home/shxqow/Documents/Projects/Linux
+2026-07-19 16:48:38.426 [info] [Model][openRepository] Opened repository (kind): repository
+2026-07-19 16:48:38.525 [info] > git config --get --local core.virtualfilesystem [94ms]
+2026-07-19 16:48:38.525 [warning] [Git][config] git config failed: Failed to execute git
+2026-07-19 16:48:38.699 [info] > git config --get commit.template [178ms]
+2026-07-19 16:48:38.722 [info] > git rev-parse --show-toplevel [198ms]
+2026-07-19 16:48:38.740 [info] > git rev-parse --show-toplevel [4ms]
+2026-07-19 16:48:38.740 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [8ms]
+2026-07-19 16:48:38.769 [info] > git rev-parse --show-toplevel [23ms]
+2026-07-19 16:48:38.798 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [30ms]
+2026-07-19 16:48:38.802 [info] > git rev-parse --show-toplevel [22ms]
+2026-07-19 16:48:38.802 [info] [Model][doInitialScan] Initial repository scan completed - repositories (1), closed repositories (0), parent repositories (0), unsafe repositories (0)
+2026-07-19 16:48:38.955 [info] > git status -z -uall [194ms]
+2026-07-19 16:48:38.973 [info] > git config --get commit.template [1ms]
+2026-07-19 16:48:38.973 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [5ms]
+2026-07-19 16:48:38.981 [info] > git config --get --local branch.main.vscode-merge-base [4ms]
+2026-07-19 16:48:38.985 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [4ms]
+2026-07-19 16:48:38.993 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/origin/main refs/remotes/origin/main [8ms]
+2026-07-19 16:48:38.999 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [7ms]
+2026-07-19 16:48:38.999 [info] > git merge-base refs/heads/main refs/remotes/origin/main [1ms]
+2026-07-19 16:48:39.018 [info] > git diff --raw --numstat --diff-filter=ADMR -z --find-renames=50% f3e4bc3d23228efe54f0dfbd5adec17392caa1ce...refs/remotes/origin/main -- [2ms]
+2026-07-19 16:48:39.127 [info] > git status -z -uall [138ms]
+2026-07-19 16:48:39.415 [info] > git check-ignore -v -z --stdin [220ms]
+2026-07-19 16:48:50.644 [info] > git check-ignore -v -z --stdin [15ms]
+2026-07-19 16:49:30.843 [info] > git config --get commit.template [9ms]
+2026-07-19 16:49:30.844 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2026-07-19 16:49:30.868 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [5ms]
+2026-07-19 16:49:31.223 [info] > git status -z -uall [369ms] (cancelled)
+2026-07-19 16:49:37.069 [info] > git check-ignore -v -z --stdin [24ms]
+2026-07-19 16:49:42.393 [info] > git check-ignore -v -z --stdin [161ms]
+2026-07-19 16:49:55.864 [info] > git check-ignore -v -z --stdin [49ms]
+2026-07-19 16:50:02.350 [info] > git check-ignore -v -z --stdin [150ms]
+2026-07-19 16:50:41.286 [info] > git check-ignore -v -z --stdin [44ms]
+2026-07-19 16:50:41.711 [info] > git check-ignore -v -z --stdin [14ms]
+2026-07-19 16:50:41.726 [info] > git show --textconv :files/system/etc/firewalld/firewalld.conf [10ms]
+2026-07-19 16:50:41.730 [info] > git ls-files --stage -- files/system/etc/firewalld/firewalld.conf [9ms]
+2026-07-19 16:50:41.734 [info] > git cat-file -s 50d3fe63dd23ddea591b1ea8b1f074afa63eb85e [1ms]
+2026-07-19 16:50:44.380 [info] > git blame --root --incremental f3e4bc3d23228efe54f0dfbd5adec17392caa1ce -- files/system/etc/firewalld/firewalld.conf [5ms]
+2026-07-19 16:51:18.863 [info] > git check-ignore -v -z --stdin [58ms]
+2026-07-19 16:51:20.297 [info] > git check-ignore -v -z --stdin [15ms]
+2026-07-19 16:51:20.311 [info] > git show --textconv :files/system/etc/skel/.config/spectaclerc [10ms]
+2026-07-19 16:51:20.314 [info] > git ls-files --stage -- files/system/etc/skel/.config/spectaclerc [9ms]
+2026-07-19 16:51:20.318 [info] > git cat-file -s d4ba8c72c948bb5c46c944810f69a1165d7c028d [1ms]
+2026-07-19 16:51:21.526 [info] > git blame --root --incremental f3e4bc3d23228efe54f0dfbd5adec17392caa1ce -- files/system/etc/skel/.config/spectaclerc [238ms]

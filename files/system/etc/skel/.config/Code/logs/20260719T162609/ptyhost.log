@@ -1,0 +1,1 @@
+2026-07-19 16:30:22.414 [error] Failed to set sticky bit on /tmp/shxqow-code-zsh: Error: ENOENT: no such file or directory, chmod '/tmp/shxqow-code-zsh'

@@ -1,0 +1,45 @@
+2026-07-19 16:48:36.703 [info] Extension host with pid 37857 started
+2026-07-19 16:48:36.703 [info] Skipping acquiring lock for /home/shxqow/.config/Code/User/workspaceStorage/4e45698a54acae645c780d37a89c529a.
+2026-07-19 16:48:36.807 [info] ExtensionService#_doActivateExtension vscode.github-authentication, startup: false, activationEvent: 'onAuthenticationRequest:github'
+2026-07-19 16:48:36.829 [info] ExtensionService#_doActivateExtension mechatroner.rainbow-csv, startup: false, activationEvent: 'onLanguage:plaintext'
+2026-07-19 16:48:36.832 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2026-07-19 16:48:37.736 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2026-07-19 16:48:37.738 [info] ExtensionService#_doActivateExtension formulahendry.auto-rename-tag, startup: true, activationEvent: '*'
+2026-07-19 16:48:37.758 [info] ExtensionService#_doActivateExtension Zignd.html-css-class-completion, startup: true, activationEvent: '*'
+2026-07-19 16:48:37.834 [info] ExtensionService#_doActivateExtension yzhang.markdown-all-in-one, startup: true, activationEvent: 'workspaceContains:README.md'
+2026-07-19 16:48:37.985 [info] ExtensionService#_doActivateExtension vscode.markdown-math, startup: false, activationEvent: 'api', root cause: yzhang.markdown-all-in-one
+2026-07-19 16:48:37.998 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2026-07-19 16:48:38.034 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2026-07-19 16:48:38.121 [info] ExtensionService#_doActivateExtension vscode.mermaid-markdown-features, startup: false, activationEvent: 'api', root cause: yzhang.markdown-all-in-one
+2026-07-19 16:48:38.156 [error] Error: Tool "renderMermaidDiagram" was not contributed.
+    at AF.registerToolImplementation (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:3412:5759)
+    at wBt.$registerTool (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:1021:97519)
+    at s._doInvokeHandler (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:5218:51898)
+    at s._invokeHandler (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:5218:51644)
+    at s._receiveRequest (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:5218:50425)
+    at s._receiveOneMessage (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:5218:49259)
+    at Vxe.value (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:5218:47331)
+    at D._deliver (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:433:3268)
+    at D.fire (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:433:3587)
+    at o6.fire (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:1076:9732)
+    at MessagePort.<anonymous> (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:5233:16880)
+2026-07-19 16:48:38.416 [info] Eager extensions activated
+2026-07-19 16:48:38.431 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2026-07-19 16:48:38.433 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2026-07-19 16:48:38.446 [info] ExtensionService#_doActivateExtension aaron-bond.better-comments, startup: false, activationEvent: 'onStartupFinished'
+2026-07-19 16:48:38.449 [info] ExtensionService#_doActivateExtension bradlc.vscode-tailwindcss, startup: false, activationEvent: 'onStartupFinished'
+2026-07-19 16:48:38.479 [info] ExtensionService#_doActivateExtension dbaeumer.vscode-eslint, startup: false, activationEvent: 'onStartupFinished'
+2026-07-19 16:48:38.507 [info] ExtensionService#_doActivateExtension formulahendry.code-runner, startup: false, activationEvent: 'onStartupFinished'
+2026-07-19 16:48:38.526 [info] ExtensionService#_doActivateExtension kisstkondoros.vscode-gutter-preview, startup: false, activationEvent: 'onStartupFinished'
+2026-07-19 16:48:38.554 [info] ExtensionService#_doActivateExtension ms-vscode-remote.remote-containers, startup: false, activationEvent: 'onStartupFinished'
+2026-07-19 16:48:38.664 [info] ExtensionService#_doActivateExtension PKief.material-icon-theme, startup: false, activationEvent: 'onStartupFinished'
+2026-07-19 16:48:38.674 [info] ExtensionService#_doActivateExtension usernamehw.errorlens, startup: false, activationEvent: 'onStartupFinished'
+2026-07-19 16:49:31.209 [warning] [Decorations] CAPPING events from decorations provider vscode.git 10000
+2026-07-19 16:50:09.478 [info] ExtensionService#_doActivateExtension vscode.terminal-suggest, startup: false, activationEvent: 'onTerminalShellIntegration:*'
+2026-07-19 16:50:13.737 [info] ExtensionService#_doActivateExtension vscode.npm, startup: false, activationEvent: 'onTerminalQuickFixRequest:ms-vscode.npm-command'
+2026-07-19 16:50:18.887 [info] ExtensionService#_doActivateExtension vscode.configuration-editing, startup: false, activationEvent: 'onLanguage:json'
+2026-07-19 16:50:18.895 [info] ExtensionService#_doActivateExtension vscode.extension-editing, startup: false, activationEvent: 'onLanguage:json'
+2026-07-19 16:50:18.922 [info] ExtensionService#_doActivateExtension vscode.json-language-features, startup: false, activationEvent: 'onLanguage:json'
+2026-07-19 16:50:53.800 [info] ExtensionService#_doActivateExtension vscode.typescript-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+2026-07-19 16:53:16.657 [info] Extension host terminating: received terminate message from renderer
+2026-07-19 16:53:16.678 [info] Extension host with pid 37857 exiting with code 0

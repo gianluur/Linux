@@ -1,0 +1,5 @@
+2026-07-19 16:54:06.775 [info] StorageMainService: creating application shared storage
+2026-07-19 16:54:06.846 [info] [shared storage] Creating shared storage database at '/home/shxqow/.vscode-shared/sharedStorage/state.vscdb' (wasCreated: false)
+2026-07-19 16:54:06.847 [info] [shared storage] Initializing fallback application storage (path: /home/shxqow/.config/Code/User/globalStorage/state.vscdb)
+2026-07-19 16:54:06.971 [info] [shared storage] Fallback application storage initialized with 108 items
+2026-07-19 16:54:06.972 [info] update#setState idle
