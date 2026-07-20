@@ -1,0 +1,22 @@
+[Desktop Entry]
+Categories=Qt;KDE;Graphics;Office;Viewer;
+Comment=Universal document viewer
+Exec=/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=okular --file-forwarding org.kde.okular @@u %U @@
+GenericName=Document Viewer
+Icon=application-pdf
+InitialPreference=7
+MimeType=application/epub+zip;application/oxps;application/pdf;application/postscript;application/prs.plucker;application/vnd.kde.okular-archive;application/vnd.ms-xpsdocument;application/x-bzdvi;application/x-bzpdf;application/x-bzpostscript;application/x-cbr;application/x-cbt;application/x-cbz;application/x-dvi;application/x-fictionbook+xml;application/x-gzdvi;application/x-gzpdf;application/x-gzpostscript;application/x-mobipocket-ebook;application/x-wwf;image/bmp;image/fax-g3;image/gif;image/g3fax;image/jpeg;image/jp2;image/png;image/tiff;image/vnd.djvu;image/x-bzeps;image/x-dds;image/x-eps;image/x-exr;image/x-gzeps;image/x-hdr;image/x-ico;image/x-pcx;image/x-portable-bitmap;image/x-portable-graymap;image/x-portable-pixmap;image/x-psd;image/x-rgb;image/x-tga;image/x-xbitmap;image/x-xcf;image/x-xpixmap;text/markdown;text/plain;video/x-mng;
+Name=Okular
+NoDisplay=false
+Path=
+PrefersNonDefaultGPU=false
+StartupNotify=true
+StartupWMClass=okular
+Terminal=false
+TerminalOptions=
+Type=Application
+X-DBUS-ServiceName=org.kde.okular
+X-DocPath=okular/index.html
+X-Flatpak=org.kde.okular
+X-KDE-SubstituteUID=false
+X-KDE-Username=

@@ -1,0 +1,123 @@
+<!DOCTYPE Menu PUBLIC '-//freedesktop//DTD Menu 1.0//EN' 'http://www.freedesktop.org/standards/menu-spec/menu-1.0.dtd'>
+<Menu>
+ <Layout>
+  <Merge type="menus"/>
+  <Menuname>Internet</Menuname>
+  <Menuname>Office</Menuname>
+  <Menuname>Graphics</Menuname>
+  <Menuname>Multimedia</Menuname>
+  <Menuname>Development</Menuname>
+  <Menuname>Games</Menuname>
+  <Menuname>Utilities</Menuname>
+  <Menuname>System</Menuname>
+  <Menuname>webapps-webapps</Menuname>
+ </Layout>
+ <Menu>
+  <Name>Development</Name>
+  <Layout>
+   <Merge type="menus"/>
+   <Menuname>Translation</Menuname>
+   <Menuname>Web Development</Menuname>
+   <Merge type="files"/>
+   <Filename>org.kde.kdebugsettings.desktop</Filename>
+   <Filename>code.desktop</Filename>
+  </Layout>
+  <Menu>
+   <Name>Internet</Name>
+   <NotDeleted/>
+  </Menu>
+  <NotDeleted/>
+ </Menu>
+ <Menu>
+  <Name>Games</Name>
+  <Layout>
+   <Merge type="menus"/>
+   <Menuname>Arcade</Menuname>
+   <Menuname>Board</Menuname>
+   <Menuname>Card</Menuname>
+   <Menuname>Kidsgames</Menuname>
+   <Menuname>Logic</Menuname>
+   <Menuname>TacticStrategy</Menuname>
+   <Merge type="files"/>
+   <Filename>net.lutris.Lutris.desktop</Filename>
+   <Filename>bazzite-steam-bpm.desktop</Filename>
+   <Filename>steam.desktop</Filename>
+  </Layout>
+  <Menu>
+   <Name>Development</Name>
+   <NotDeleted/>
+  </Menu>
+ </Menu>
+ <Menu>
+  <Name>Help</Name>
+  <Deleted/>
+ </Menu>
+ <Move>
+  <Old>Internet</Old>
+  <New>Development/Internet</New>
+ </Move>
+ <Menu>
+  <Name>Internet</Name>
+  <NotDeleted/>
+ </Menu>
+ <Move>
+  <Old>Development/Internet</Old>
+  <New>Internet</New>
+ </Move>
+ <Move>
+  <Old>Development</Old>
+  <New>Games/Development</New>
+ </Move>
+ <Move>
+  <Old>Games/Development</Old>
+  <New>Development</New>
+ </Move>
+ <Menu>
+  <Name>Education</Name>
+  <Deleted/>
+ </Menu>
+ <Menu>
+  <Name>Science</Name>
+  <Deleted/>
+ </Menu>
+ <Menu>
+  <Name>Applications</Name>
+  <Deleted/>
+ </Menu>
+ <Menu>
+  <Name>Utilities</Name>
+  <Layout>
+   <Merge type="menus"/>
+   <Menuname>XUtilities</Menuname>
+   <Merge type="files"/>
+   <Filename>org.kde.ark.desktop</Filename>
+   <Filename>io.github.kolunmi.Bazaar.desktop</Filename>
+   <Filename>com.ranfdev.DistroShelf.desktop</Filename>
+   <Filename>org.kde.plasma.emojier.desktop</Filename>
+   <Filename>org.fcitx.Fcitx5.desktop</Filename>
+   <Filename>com.github.tchx84.Flatseal.desktop</Filename>
+   <Filename>it.mijorus.gearlever.desktop</Filename>
+   <Filename>org.kde.kcalc.desktop</Filename>
+   <Filename>kbd-layout-viewer5.desktop</Filename>
+   <Filename>org.kde.kfind.desktop</Filename>
+   <Filename>kvantummanager.desktop</Filename>
+   <Filename>org.localsend.localsend_app.desktop</Filename>
+   <Filename>org.freedesktop.Piper.desktop</Filename>
+   <Filename>org.kde.spectacle.desktop</Filename>
+   <Filename>code.desktop</Filename>
+   <Separator/>
+   <Menuname>More</Menuname>
+  </Layout>
+  <Exclude>
+   <Filename>discourse.desktop</Filename>
+   <Filename>bbrew.desktop</Filename>
+  </Exclude>
+ </Menu>
+ <Menu>
+  <Name>.hidden</Name>
+  <Include>
+   <Filename>discourse.desktop</Filename>
+   <Filename>bbrew.desktop</Filename>
+  </Include>
+ </Menu>
+</Menu>

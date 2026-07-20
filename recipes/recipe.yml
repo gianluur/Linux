@@ -1,6 +1,6 @@
 # yaml-language-server: $schema=https://schema.blue-build.org/recipe-v1.json
 name: workstation
-description: "Bazzite base, KDE Desktop, GTK apps, Distrobox utilities"
+description: "Base: Bazzite | Desktop: KDE | Purpose: Dev, Office, Gaming"
 
 base-image: ghcr.io/ublue-os/bazzite-nvidia-open
 image-version: latest
@@ -24,7 +24,7 @@ modules:
         add:
           - https://download.opensuse.org/repositories/home:paulmcauley/Fedora_44/home:paulmcauley.repo
           - https://download.opensuse.org/repositories/home:luisbocanegra/Fedora_44/home:luisbocanegra.repo
-
+          - protonvpn.repo
       copr:
         enable:
           - infinality/kwin-effects-better-blur-dx
@@ -35,7 +35,6 @@ modules:
     install:
       packages:
         # Utilities & Essentials
-        - fastfetch
         - yazi
         - eza
         - zoxide
@@ -63,6 +62,9 @@ modules:
         # i need to have vscode to have full system access to modify stuff like
         # /etc or similar locations
         - code
+
+        # Proton VPN
+        - proton-vpn-gnome-desktop
 
         # KDE Stuff
         - kvantum
@@ -97,11 +99,9 @@ modules:
         - plasma-oxygen
         - oxygen-icon-theme
         - gnome-disk-utility
-        - fastfetch
         - stress-ng
         - powerbuttond
         - sdgyrodsu
-        - btop
         - duf
         - gum
         - jupiter-fan-control
@@ -117,6 +117,7 @@ modules:
         - inputplumber
         - gamescope-session-ogui-steam
         - ds-inhibit
+        - khelpcenter
 
   - type: default-flatpaks
     configurations:
