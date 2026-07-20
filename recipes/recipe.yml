@@ -63,8 +63,6 @@ modules:
         # /etc or similar locations
         - code
 
-        - proton-vpn-gnome-desktop
-
         # KDE Stuff
         - kvantum
         - nwg-look
@@ -115,32 +113,8 @@ modules:
         - steam-notif-daemon
         - inputplumber
         - gamescope-session-ogui-steam
-        - ds-inhibit
+        - ds-inhibit2
         - khelpcenter
-
-  - type: default-flatpaks
-    configurations:
-      - scope: user
-      - notify: true
-        install:
-          # Desktop Essentials
-          - app.zen_browser.zen # Browser
-          - org.kde.kcalc # Calculator
-          - org.onlyoffice.desktopeditors # Office Suite
-          - com.obsproject.Studio # Video Recording
-          - org.kde.okular # PDF Reader
-          - org.kde.gwenview # Image Viewer
-          - org.videolan.VLC # Audio & Video Player
-          - md.obsidian.Obsidian # Notes
-          - org.localsend.localsend_app # File Sharing
-          - dev.vencord.Vesktop # Discord
-
-          # Comptaibility
-          - it.mijorus.gearlever # AppImage handling
-          - com.ranfdev.DistroShelf # Distrobox handling
-          - com.github.tchx84.Flatseal # Flatpak permissions
-          - org.fedoraproject.MediaWriter # ISO Burner
-          - org.freedesktop.Piper # Logitech
 
   - type: fonts
     fonts:
@@ -152,3 +126,6 @@ modules:
   - type: script
     scripts:
       - setup_shell.sh
+    snippets:
+      - chmod +x /etc/bluebuild/install-flatpak.sh
+      - dnf install --setopt=tsflags=noscripts proton-vpn-gnome-desktop
