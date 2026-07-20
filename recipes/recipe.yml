@@ -63,7 +63,6 @@ modules:
         # /etc or similar locations
         - code
 
-        # Proton VPN
         - proton-vpn-gnome-desktop
 
         # KDE Stuff
