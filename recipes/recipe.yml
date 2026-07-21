@@ -127,5 +127,5 @@ modules:
     scripts:
       - setup_shell.sh
     snippets:
-      - chmod +x /etc/bluebuild/install-flatpak.sh
+      - chmod +x /etc/bluebuild/setup-userspace.sh
       - dnf install -y --setopt=tsflags=noscripts proton-vpn-gnome-desktop
