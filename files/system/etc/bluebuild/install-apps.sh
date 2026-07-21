@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# --- Apps to install ---
 FLATPAKS=(
     app.zen_browser.zen # Browser
     org.kde.kcalc # Calculator
@@ -19,15 +20,7 @@ FLATPAKS=(
 )
 
 # --- Configuration ---
-MARKER_FILE="$HOME/.local/share/flatpak-installed.done"
 FLATPAK_REMOTE="flathub"
-
-# --- Exit if already done ---
-if [ -f "$MARKER_FILE" ]; then
-    echo "✅ Flatpaks already installed. Exiting."
-    sleep 2
-    exit 0
-fi
 
 # --- Wait for network (just in case autostart runs too early) ---
 echo "⏳ Waiting for network connection..."
@@ -60,18 +53,15 @@ for pkg in "${FLATPAKS[@]}"; do
     echo "----------------------------------------"
 done
 
-# --- Mark as complete and clean up the autostart file ---
-touch "$MARKER_FILE"
 echo ""
 echo "🎉 All flatpaks processed!"
 
-# Remove the .desktop file so it never runs again
-rm -f "$HOME/.config/autostart/flatpak-install.desktop"
+echo "=== Refreshing Plasma Panel & Icons ==="
+if command -v kbuildsycoca6 &>/dev/null; then
+    kbuildsycoca6 --noincremental &>/dev/null
+elif command -v kbuildsycoca5 &>/dev/null; then
+    kbuildsycoca5 --noincremental &>/dev/null
+fi
 
-echo "🛠️  Autostart entry removed. This window will close in 5 seconds."
-sleep 5
-
-echo "trying to do protonvpn stuff"
-systemctl daemon-reload
-systemctl enable me.proton.vpn.split_tunneling.service
-systemctl start me.proton.vpn.split_tunneling.service
+systemctl --user restart plasma-plasmashell.service
+echo ""

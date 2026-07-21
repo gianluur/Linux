@@ -2,7 +2,7 @@
 Type=Application
 Name=Flatpak First-Boot Setup
 Comment=Installs required Flatpaks and shows progress
-Exec=kitty bash -c "/etc/bluebuild/install-flatpaks.sh; exec bash"
+Exec=kitty bash -c "/etc/bluebuild/setup-userspace.sh; exec bash"
 X-GNOME-Autostart-enabled=true
 Terminal=false
 NoDisplay=false
