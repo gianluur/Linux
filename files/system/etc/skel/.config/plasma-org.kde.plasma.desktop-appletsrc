@@ -90,7 +90,7 @@ DialogWidth=810
 
 [Containments][27][Applets][30][Configuration][General]
 iconSpacing=0
-launchers=file:///var/home/user/.local/share/flatpak/app/app.zen_browser.zen/current/active/export/share/applications/app.zen_browser.zen.desktop,applications:org.kde.dolphin.desktop,applications:kitty.desktop,applications:code.desktop,applications:dev.vencord.Vesktop.desktop,file:///var/home/user/.local/share/flatpak/exports/share/applications/org.onlyoffice.desktopeditors.desktop,file:///var/home/user/.local/share/flatpak/exports/share/applications/md.obsidian.Obsidian.desktop,applications:systemsettings.desktop
+launchers=applications:app.zen_browser.zen.desktop,applications:org.kde.dolphin.desktop,applications:kitty.desktop,applications:code.desktop,applications:dev.vencord.Vesktop.desktop,applications:org.onlyoffice.desktopeditors.desktop,applications:md.obsidian.Obsidian.desktop,applications:systemsettings.desktop
 
 [Containments][27][Applets][64]
 immutability=1

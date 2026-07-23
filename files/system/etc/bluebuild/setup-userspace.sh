@@ -1,8 +1,11 @@
 #!/bin/bash
 
+# Set a default wallpaper
+plasma-apply-wallpaperimage /usr/share/wallpapers/default.png
+
 MARKER_FILE="$HOME/.local/share/userspace-setup.done"
 if [ -f "$MARKER_FILE" ]; then
-    echo "✅ Flatpaks already installed. Exiting."
+    echo "✅ Userspace already configured, if not true remove this file: $MARKER_FILE"
     sleep 2
     exit 0
 fi

@@ -56,12 +56,7 @@ done
 echo ""
 echo "🎉 All flatpaks processed!"
 
-echo "=== Refreshing Plasma Panel & Icons ==="
-if command -v kbuildsycoca6 &>/dev/null; then
-    kbuildsycoca6 --noincremental &>/dev/null
-elif command -v kbuildsycoca5 &>/dev/null; then
-    kbuildsycoca5 --noincremental &>/dev/null
-fi
-
+echo "=== Refreshing Desktop ==="
 systemctl --user restart plasma-plasmashell.service
+
 echo ""
