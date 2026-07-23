@@ -7,14 +7,20 @@ if [ -f "$MARKER_FILE" ]; then
     exit 0
 fi
 
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
 echo "=== Finishing configuring your desktop... ==="
 
 echo "=== Installing Apps ==="
-./install-apps.sh
+"$SCRIPT_DIR/install-apps.sh"
 echo "=== Done ==="
 
 echo "=== Configuring your shell ==="
 zsh -i -c "zinit compile --all; exit"
+echo "=== Done ==="
+
+echo "🔧 Configuring virtualization..."
+"$SCRIPT_DIR/setup-virtualization.sh"
 echo "=== Done ==="
 
 echo "=== Finishing configuring Proton VPN ==="

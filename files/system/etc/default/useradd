@@ -6,3 +6,4 @@ EXPIRE=
 SHELL=/usr/bin/zsh
 SKEL=/etc/skel
 CREATE_MAIL_SPOOL=yes
+GROUPS=libvirt,kvm

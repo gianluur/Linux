@@ -11,9 +11,6 @@ modules:
       - source: system
         destination: /
 
-      - source: scripts
-        destination: /etc/bluebuild/scripts
-
   - type: gschema-overrides
     include:
       - zz1-window-buttons.gschema.override
@@ -31,10 +28,11 @@ modules:
           - atim/starship
           - lionheartp/Hyprland
           - lihaohong/yazi
+          - jdxcode/mise
 
     install:
       packages:
-        # Utilities & Essentials
+        # Utilities
         - yazi
         - eza
         - zoxide
@@ -55,6 +53,7 @@ modules:
         - zsh
         - starship
         - distrobox
+        - mise
 
         # The reason VSCode is here instead of the flatpak app section
         # is because a flatpak doesn't have system access,
@@ -63,13 +62,24 @@ modules:
         # /etc or similar locations
         - code
 
+        # Virtual Machines
+        - qemu-kvm
+        - libvirt
+        - virt-install
+        - virt-manager
+        - edk2-ovmf
+        - swtpm
+        - qemu-img
+
+        # System
+        - sbsigntools
+        - wl-clipboard
+
         # KDE Stuff
         - kvantum
         - nwg-look
         - kde-partitionmanager
-        - wl-clipboard
         - kde-connect
-        - sbsigntools
         - klassy
         - kwin-effects-better-blur-dx
         - kwin-effects-better-blur-dx-x11
@@ -129,3 +139,21 @@ modules:
     snippets:
       - chmod +x /etc/bluebuild/setup-userspace.sh
       - dnf install -y --setopt=tsflags=noscripts proton-vpn-gnome-desktop
+
+      # === VM ===
+      # TPM directory for windows machines
+      - mkdir -p /var/lib/swtpm-localca
+      - chown tss:tss /var/lib/swtpm-localca
+
+      # SELinux fixes
+      - restorecon -Rv /var/lib/libvirt /var/log/libvirt /var/lib/swtpm-localca 2>/dev/null || true
+
+  - type: kargs
+    kargs:
+      - kvm.ignore_msrs=1
+      - kvm.report_ignored_msrs=0
+
+  - type: systemd
+    system:
+      enabled:
+        - libvirtd
