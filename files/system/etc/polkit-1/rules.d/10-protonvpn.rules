@@ -1,0 +1,18 @@
+polkit.addRule(function (action, subject) {
+    let modify_networking = "org.freedesktop.NetworkManager.settings.modify.system";
+    if (action.id === modify_networking && subject.isInGroup("wheel")) {
+        try {
+            let executable = standard_input.readlink("/proc/" + subject.pid + "/exe");
+            if (executable === "/usr/bin/protonvpn-app") {
+                return polkit.Result.YES;
+            }
+            else {
+                return polkit.Result.NOT_HANDLED;
+            }
+        }
+        catch (error) {
+            polkit.log("[ERROR] Couldn't read ProtonVPN executable: \n\t " + error);
+            return polkit.Result.NOT_HANDLED;
+        }
+    }
+});
