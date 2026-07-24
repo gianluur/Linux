@@ -21,6 +21,7 @@ modules:
         add:
           - https://download.opensuse.org/repositories/home:paulmcauley/Fedora_44/home:paulmcauley.repo
           - https://download.opensuse.org/repositories/home:luisbocanegra/Fedora_44/home:luisbocanegra.repo
+          - https://download.docker.com/linux/fedora/docker-ce.repo
           - protonvpn.repo
       copr:
         enable:
@@ -70,6 +71,13 @@ modules:
         - edk2-ovmf
         - swtpm
         - qemu-img
+        - docker-ce
+        - docker-ce-cli
+        - containerd.io
+        - docker-buildx-plugin
+        - docker-compose-plugin
+        - freerdp
+        - winboat-0.9.0-x86_64
 
         # System
         - sbsigntools
@@ -159,3 +167,4 @@ modules:
     system:
       enabled:
         - libvirtd
+        - docker

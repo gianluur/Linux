@@ -6,7 +6,7 @@ sudo systemctl enable --now libvirtd
 echo "✅ libvirtd enabled and started."
 
 # ===== Add user to virtualization groups =====
-for g in libvirt kvm; do
+for g in libvirt kvm docker; do
     if ! id -nG "$USER" | grep -qw "$g"; then
         sudo usermod -aG "$g" "$USER"
         echo "✅ Added user to $g group (Log out & back in for changes to take effect)."
