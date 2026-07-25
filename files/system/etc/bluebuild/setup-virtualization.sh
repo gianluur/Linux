@@ -3,6 +3,7 @@ set -euo pipefail
 
 # ===== Enable and Start libvirtd =====
 sudo systemctl enable --now libvirtd
+sudo systemctl enable --now docker
 echo "✅ libvirtd enabled and started."
 
 # ===== Add user to virtualization groups =====

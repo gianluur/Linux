@@ -14,6 +14,14 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 echo "=== Finishing configuring your desktop... ==="
 
+echo "=== Configuring Proton VPN ==="
+"$SCRIPT_DIR/setup-vpn.sh"
+echo "=== Done === "
+
+echo "🔧 Configuring virtualization..."
+"$SCRIPT_DIR/setup-virtualization.sh"
+echo "=== Done ==="
+
 echo "=== Installing Apps ==="
 "$SCRIPT_DIR/install-apps.sh"
 echo "=== Done ==="
@@ -22,17 +30,8 @@ echo "=== Configuring your shell ==="
 zsh -i -c "zinit compile --all; exit"
 echo "=== Done ==="
 
-echo "🔧 Configuring virtualization..."
-"$SCRIPT_DIR/setup-virtualization.sh"
-echo "=== Done ==="
-
-echo "=== Finishing configuring Proton VPN ==="
-systemctl daemon-reload
-systemctl enable me.proton.vpn.split_tunneling.service
-systemctl start me.proton.vpn.split_tunneling.service
-echo "=== Done === "
-
 touch "$MARKER_FILE"
 rm -f "$HOME/.config/autostart/flatpak-install.desktop"
-echo "🛠️  Autostart entry removed. This window will close in 5 seconds."
+echo "🛠️  Autostart entry removed. Your PC will reboot in 5 seconds to apply all the changes"
 sleep 5
+systemctl reboot

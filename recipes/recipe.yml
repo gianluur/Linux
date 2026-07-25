@@ -148,6 +148,7 @@ modules:
       - chmod +x /etc/bluebuild/setup-userspace.sh
       - chmod +x /etc/bluebuild/install-apps.sh
       - chmod +x /etc/bluebuild/setup-virtualization.sh
+      - chmod +x /etc/bluebuild/setup-vpn.sh
       - dnf install -y --setopt=tsflags=noscripts proton-vpn-gnome-desktop
 
       # === VM ===
