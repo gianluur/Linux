@@ -3,8 +3,13 @@ set -euo pipefail
 
 # ===== Enable and Start libvirtd =====
 sudo systemctl enable --now libvirtd
-sudo systemctl enable --now docker
 echo "✅ libvirtd enabled and started."
+
+sudo groupadd docker
+sudo systemctl start docker.socket
+sudo systemctl start docker
+sudo systemctl enable docker.service docker.socket
+echo "✅ docker enabled and started."
 
 # ===== Add user to virtualization groups =====
 for g in libvirt kvm docker; do
@@ -25,7 +30,7 @@ if command -v getenforce &> /dev/null; then
     if sudo setsebool -P virt_use_home_dir on; then
         echo "✅ SELinux boolean 'virt_use_home_dir' enabled."
     else
-        echo "⚠️  SELinux is present but boolean couldn't be set. Check if policycoreutils is installed."
+        echo "⚠️ SELinux is present but boolean couldn't be set. Check if policycoreutils is installed."
     fi
 fi
 

@@ -83,6 +83,11 @@ modules:
         - sbsigntools
         - wl-clipboard
 
+        # Fonts
+        - rsms-inter-fonts
+        # For monospace font we use jetbrains mono nerd font
+        # but i prebundled it in the /usr/share/fonts folder
+
         # KDE Stuff
         - kvantum
         - nwg-look
@@ -92,6 +97,7 @@ modules:
         - kwin-effects-better-blur-dx
         - kwin-effects-better-blur-dx-x11
         - plasma-panel-colorizer
+        - plasma-discover
 
     remove:
       packages:
@@ -133,13 +139,6 @@ modules:
         - gamescope-session-ogui-steam
         - ds-inhibit2
         - khelpcenter
-
-  - type: fonts
-    fonts:
-      nerd-fonts:
-        - JetBrainsMono
-      google-fonts:
-        - Inter
 
   - type: script
     scripts:
