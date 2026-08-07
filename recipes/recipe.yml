@@ -101,7 +101,6 @@ modules:
         - plasma-discover-flatpak
         - plasma-discover-kns
         - plasma-discover-notifier
-        - plasma-discover-packagekit
 
     remove:
       packages:
@@ -113,6 +112,7 @@ modules:
         - filelight
         - krfb
         - krdc
+        - bazaar
 
         # Bazzite Debloating
         - waydroid
