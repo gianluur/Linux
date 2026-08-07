@@ -98,6 +98,10 @@ modules:
         - kwin-effects-better-blur-dx-x11
         - plasma-panel-colorizer
         - plasma-discover
+        - plasma-discover-flatpak
+        - plasma-discover-kns
+        - plasma-discover-notifier
+        - plasma-discover-packagekit
 
     remove:
       packages:
