@@ -1,6 +1,6 @@
 [netbird]
 name=netbird
 baseurl=https://pkgs.netbird.io/yum/
+gpgkey=https://pkgs.netbird.io/yum/repodata/repomd.xml.key
 enabled=1
 gpgcheck=1
-gpgkey=https://pkgs.netbird.io/yum/repodata/repomd.xml.key
