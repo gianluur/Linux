@@ -59,13 +59,6 @@ modules:
         - distrobox
         - mise
 
-        # Netbird for homelab
-        - netbird
-        - netbird-ui
-        - gtk4
-        - webkitgtk6.0
-        - xdg-utils
-
         # The reason VSCode is here instead of the flatpak app section
         # is because a flatpak doesn't have system access,
         # since i want to have only one tool for modifying every file
@@ -163,6 +156,7 @@ modules:
       - chmod +x /etc/bluebuild/setup-virtualization.sh
       - chmod +x /etc/bluebuild/setup-vpn.sh
       - dnf install -y --setopt=tsflags=noscripts proton-vpn-gnome-desktop
+      - dnf install -y --setopt=tsflags=noscripts netbird netbird-ui gtk4 webkitgtk6.0 xdg-utils
 
       # === VM ===
       # TPM directory for windows machines
