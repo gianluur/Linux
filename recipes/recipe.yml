@@ -23,6 +23,9 @@ modules:
           - https://download.opensuse.org/repositories/home:luisbocanegra/Fedora_44/home:luisbocanegra.repo
           - https://download.docker.com/linux/fedora/docker-ce.repo
           - protonvpn.repo
+          - vscode.repo
+          - netbird.repo
+
       copr:
         enable:
           - infinality/kwin-effects-better-blur-dx
