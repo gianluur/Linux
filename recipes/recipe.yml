@@ -33,7 +33,7 @@ modules:
           - lionheartp/Hyprland
           - lihaohong/yazi
           - jdxcode/mise
-          - che/nerd-fonts
+          - aquacash5/nerd-fonts
 
     install:
       packages:
@@ -88,8 +88,7 @@ modules:
 
         # Fonts
         - rsms-inter-fonts
-        - jetbrains-mono-fonts
-        - nerd-fonts
+        - jet-brains-mono-nerd-fonts
 
         # KDE Stuff
         - kvantum
