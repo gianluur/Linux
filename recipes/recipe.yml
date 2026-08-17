@@ -33,6 +33,7 @@ modules:
           - lionheartp/Hyprland
           - lihaohong/yazi
           - jdxcode/mise
+          - che/nerd-fonts
 
     install:
       packages:
@@ -70,7 +71,6 @@ modules:
         - qemu-kvm
         - libvirt
         - virt-install
-        - virt-manager
         - edk2-ovmf
         - swtpm
         - qemu-img
@@ -88,6 +88,7 @@ modules:
 
         # Fonts
         - rsms-inter-fonts
+        - nerd-fonts
         # For monospace font we use jetbrains mono nerd font
         # but i prebundled it in the /usr/share/fonts folder
 
@@ -100,10 +101,7 @@ modules:
         - kwin-effects-better-blur-dx
         - kwin-effects-better-blur-dx-x11
         - plasma-panel-colorizer
-        - plasma-discover
-        - plasma-discover-flatpak
-        - plasma-discover-kns
-        - plasma-discover-notifier
+        - bazaar
 
     remove:
       packages:
@@ -115,7 +113,6 @@ modules:
         - filelight
         - krfb
         - krdc
-        - bazaar
 
         # Bazzite Debloating
         - waydroid
@@ -137,7 +134,16 @@ modules:
         - jupiter-sd-mounting-btrfs
         - steamdeck-dsp
         - steamdeck-kde-presets-desktop
+        - steamdeck-backgrounds
         - galileo-mura
+        - bazzite-portal
+        - cockpit-networkmanager
+        - cockpit-podman
+        - cockpit-selinux
+        - cockpit-system
+        - cockpit-files
+        - cockpit-storaged
+        - gmodpatchtool
         - vpower
         - steamos-manager-powerstation
         - steamos-manager-powerstation-gamescope-session-plus
@@ -145,7 +151,13 @@ modules:
         - inputplumber
         - gamescope-session-ogui-steam
         - ds-inhibit2
+        - iio-sensor-proxy
+        - inputattach-cec-units
+        - linux-cec
+        - fish
+        - vim
         - khelpcenter
+        - ryzenadj
 
   - type: script
     scripts:
@@ -155,6 +167,7 @@ modules:
       - chmod +x /etc/bluebuild/install-apps.sh
       - chmod +x /etc/bluebuild/setup-virtualization.sh
       - chmod +x /etc/bluebuild/setup-vpn.sh
+      - chmod +x /etc/bluebuild/setup-vpn.sh
       - dnf install -y --setopt=tsflags=noscripts proton-vpn-gnome-desktop
       - dnf install -y --setopt=tsflags=noscripts netbird netbird-ui gtk4 webkitgtk6.0 xdg-utils
 
@@ -162,8 +175,6 @@ modules:
       # TPM directory for windows machines
       - mkdir -p /var/lib/swtpm-localca
       - chown tss:tss /var/lib/swtpm-localca
-
-      # SELinux fixes
       - restorecon -Rv /var/lib/libvirt /var/log/libvirt /var/lib/swtpm-localca 2>/dev/null || true
 
   - type: kargs

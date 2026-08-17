@@ -18,6 +18,11 @@ echo "=== Configuring Proton VPN ==="
 "$SCRIPT_DIR/setup-vpn.sh"
 echo "=== Done === "
 
+echo "=== Configuring Netbird ==="
+"$SCRIPT_DIR/setup-netbird.sh"
+echo "=== Done === "
+
+
 echo "🔧 Configuring virtualization..."
 "$SCRIPT_DIR/setup-virtualization.sh"
 echo "=== Done ==="
