@@ -88,9 +88,8 @@ modules:
 
         # Fonts
         - rsms-inter-fonts
+        - jetbrains-mono-fonts
         - nerd-fonts
-        # For monospace font we use jetbrains mono nerd font
-        # but i prebundled it in the /usr/share/fonts folder
 
         # KDE Stuff
         - kvantum
