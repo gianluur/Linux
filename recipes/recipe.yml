@@ -55,8 +55,8 @@ modules:
         - curl
         - git
         - kitty
-        - zsh
         - starship
+        - zsh
         - distrobox
         - mise
 
@@ -150,11 +150,6 @@ modules:
         - inputplumber
         - gamescope-session-ogui-steam
         - ds-inhibit2
-        - iio-sensor-proxy
-        - inputattach-cec-units
-        - linux-cec
-        - fish
-        - vim
         - khelpcenter
         - ryzenadj
 
