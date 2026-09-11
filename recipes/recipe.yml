@@ -112,8 +112,6 @@ modules:
         - kwrite
         - kate
         - filelight
-        - krfb
-        - krdc
 
         # Bazzite Debloating
         - waydroid
