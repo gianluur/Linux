@@ -1,0 +1,16 @@
+[Desktop Entry]
+Categories=Utility;
+Comment=Windows for Penguins
+Exec=/opt/winboat/winboat %U
+Icon=winboat
+Name=WinBoat
+NoDisplay=false
+Path=
+PrefersNonDefaultGPU=false
+StartupNotify=true
+StartupWMClass=winboat
+Terminal=false
+TerminalOptions=
+Type=Application
+X-KDE-SubstituteUID=false
+X-KDE-Username=

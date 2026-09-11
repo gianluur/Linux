@@ -1,0 +1,16 @@
+[Common]
+CornerRadius=12
+FancyMargins=false
+ScrollBarTransient=true
+ScrollBarTransientAlwaysShowSlim=true
+ShadowSize=ShadowNone
+
+[Style]
+DisableDolphinUrlNavigatorBackground=false
+MenuOpacity=40
+RoundedRubberBandFrame=false
+TabUseBrighterCloseIcon=true
+TabsHeight=-5
+UnifiedTabBarKonsole=true
+ViewDrawFocusIndicator=false
+WidgetDrawShadow=false

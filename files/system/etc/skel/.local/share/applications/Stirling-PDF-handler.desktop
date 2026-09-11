@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=Stirling PDF
+Exec="/var/home/test/AppImages/stirlingpdf.appimage" %u
+Terminal=false
+MimeType=x-scheme-handler/stirlingpdf
+NoDisplay=true

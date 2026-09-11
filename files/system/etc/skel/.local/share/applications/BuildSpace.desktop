@@ -1,0 +1,17 @@
+[Desktop Entry]
+Name=BuildSpace
+GenericName=Terminal entering BuildSpace
+Comment=Terminal entering BuildSpace
+Categories=Distrobox;System;Utility
+Exec=/usr/bin/distrobox enter  BuildSpace
+Icon=/var/home/test/.local/share/icons/distrobox/fedora.png
+Keywords=distrobox;
+NoDisplay=false
+Terminal=true
+TryExec=/usr/bin/distrobox
+Type=Application
+Actions=Remove;
+
+[Desktop Action Remove]
+Name=Remove BuildSpace from system
+Exec=/usr/bin/distrobox rm  BuildSpace

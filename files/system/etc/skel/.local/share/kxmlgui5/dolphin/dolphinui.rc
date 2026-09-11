@@ -1,5 +1,5 @@
 <!DOCTYPE gui>
-<gui name="dolphin" translationDomain="kxmlgui6" version="48">
+<gui name="dolphin" translationDomain="kxmlgui6" version="49">
  <MenuBar alreadyVisited="1">
   <Menu alreadyVisited="1" name="file" noMerge="1">
    <text translationDomain="kxmlgui6">&amp;File</text>
@@ -65,15 +65,19 @@
    <Action name="view_zoom_out"/>
    <Separator/>
    <Action name="sort"/>
+   <Action name="group_by"/>
    <Action name="view_mode"/>
    <Action name="additional_info"/>
    <Action name="show_preview"/>
-   <Action name="show_in_groups"/>
    <Action name="show_hidden_files"/>
    <Action name="act_as_admin"/>
    <Separator/>
+   <Action name="restore_view_settings_default"/>
+   <Action name="view_properties"/>
+   <Separator/>
    <Action name="split_view_menu"/>
    <Action name="popout_split_view"/>
+   <Action name="focus_inactive_split_view"/>
    <Action name="split_stash"/>
    <Action name="redisplay"/>
    <Action name="stop"/>
@@ -84,8 +88,6 @@
     <Action name="editable_location"/>
     <Action name="replace_location"/>
    </Menu>
-   <Separator/>
-   <Action name="view_properties"/>
   </Menu>
   <Menu alreadyVisited="1" name="go" noMerge="1">
    <text translationDomain="kxmlgui6">&amp;Go</text>
@@ -170,23 +172,24 @@
   </disable>
  </State>
  <ActionProperties scheme="Default">
-  <Action name="go_back" priority="0"/>
-  <Action name="go_forward" priority="0"/>
-  <Action name="go_up" priority="0"/>
-  <Action name="go_home" priority="0"/>
-  <Action name="stop" priority="0"/>
-  <Action name="icons" priority="0"/>
   <Action name="compact" priority="0"/>
   <Action name="details" priority="0"/>
+  <Action name="edit_copy" priority="0"/>
+  <Action name="edit_cut" priority="0"/>
+  <Action name="edit_paste" priority="0"/>
+  <Action name="go_back" priority="0"/>
+  <Action name="go_forward" priority="0"/>
+  <Action name="go_home" priority="0"/>
+  <Action name="go_up" priority="0"/>
+  <Action name="icons" priority="0"/>
+  <Action name="stop" priority="0"/>
+  <Action name="toggle_filter" priority="0"/>
+  <Action name="toggle_search" priority="0"/>
   <Action name="view_mode" priority="0"/>
   <Action name="view_settings" priority="0"/>
   <Action name="view_zoom_in" priority="0"/>
-  <Action name="view_zoom_reset" priority="0"/>
   <Action name="view_zoom_out" priority="0"/>
-  <Action name="edit_cut" priority="0"/>
-  <Action name="edit_copy" priority="0"/>
-  <Action name="edit_paste" priority="0"/>
-  <Action name="toggle_search" priority="0"/>
-  <Action name="toggle_filter" priority="0"/>
+  <Action name="view_zoom_reset" priority="0"/>
+  <Action name="hamburger_menu" priority="0"/>
  </ActionProperties>
 </gui>

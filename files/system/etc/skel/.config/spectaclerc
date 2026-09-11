@@ -1,5 +1,18 @@
+[Annotations]
+annotationToolType=3
+freehandShadow=false
+
+[GuiConfig]
+quitAfterSaveCopyExport=true
+
 [ImageSave]
+lastImageSaveAsLocation=file:///var/home/test/Pictures/Screenshots/Screenshot_20260907_155149.png
+lastImageSaveLocation=file:///var/home/test/Pictures/Screenshots/Screenshot_20260907_155149.png
 translatedScreenshotsFolder=Screenshots
 
 [VideoSave]
 translatedScreencastsFolder=Screencasts
+
+[ViewerWindow]
+1920x1080 screen: Height=570
+1920x1080 screen: Width=828

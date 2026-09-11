@@ -63,18 +63,18 @@ ForegroundPositive=179,225,163
 ForegroundVisited=198,170,232
 
 [Colors:Header][Inactive]
-BackgroundAlternate=49,54,59
-BackgroundNormal=22,22,29
-DecorationFocus=61,174,233
-DecorationHover=61,174,233
-ForegroundActive=61,174,233
-ForegroundInactive=161,169,177
-ForegroundLink=29,153,243
-ForegroundNegative=218,68,83
-ForegroundNeutral=246,116,0
-ForegroundNormal=252,252,252
-ForegroundPositive=39,174,96
-ForegroundVisited=155,89,182
+BackgroundAlternate=22,22,29
+BackgroundNormal=26,27,38
+DecorationFocus=164,185,239
+DecorationHover=164,185,239
+ForegroundActive=164,185,239
+ForegroundInactive=120,124,153
+ForegroundLink=164,185,239
+ForegroundNegative=226,140,140
+ForegroundNeutral=254,157,100
+ForegroundNormal=215,218,224
+ForegroundPositive=179,225,163
+ForegroundVisited=173,142,230
 
 [Colors:Selection]
 BackgroundAlternate=110,85,171
@@ -134,28 +134,30 @@ ForegroundVisited=173,142,230
 
 [General]
 AccentColor=146,110,228
+ColorScheme=TokyoNightModified
 ColorSchemeHash=f5a49707583c52c45167cca3f3d323fdf8af0021
 LastUsedCustomAccentColor=146,110,228
+TerminalApplication=kitty
+TerminalService=kitty.desktop
+UseSystemBell=true
 XftAntialias=true
 XftHintStyle=hintslight
 XftSubPixel=none
-fixed=JetBrainsMono Nerd Font,11,-1,5,400,0,0,0,0,0,0,0,0,0,0,1,,0,0
-font=Inter,10,-1,5,600,0,0,0,0,0,0,0,0,0,0,1,SemiBold,0,0
-menuFont=Inter,10,-1,5,600,0,0,0,0,0,0,0,0,0,0,1,SemiBold,0,0
-smallestReadableFont=Inter,8,-1,5,600,0,0,0,0,0,0,0,0,0,0,1,SemiBold,0,0
-toolBarFont=Inter,9,-1,5,600,0,0,0,0,0,0,0,0,0,0,1,SemiBold,0,0
-
-[Icons]
-Theme=MacTahoe-purple-dark
+fixed=JetBrainsMono Nerd Font,11,-1,5,600,0,0,0,0,0,0,0,0,0,0,1,SemiBold,0,0
+font=Inter,10,-1,5,500,0,0,0,0,0,0,0,0,0,0,1,Medium,0,0
+menuFont=Inter,10,-1,5,500,0,0,0,0,0,0,0,0,0,0,1,Medium,0,0
+smallestReadableFont=Inter,8,-1,5,500,0,0,0,0,0,0,0,0,0,0,1,Medium,0,0
+toolBarFont=Inter,9,-1,5,500,0,0,0,0,0,0,0,0,0,0,1,Medium,0,0
 
 [KDE]
 AnimationDurationFactor=0.5
 DefaultDarkLookAndFeel=com.github.vinceliuice.MacTahoe-Dark
 DefaultLightLookAndFeel=com.github.vinceliuice.MacTahoe-Dark
-LookAndFeelPackage=org.kde.breezedark.desktop
+LookAndFeelPackage=shxqow
+ShowDeleteCommand=true
 contrast=4
 frameContrast=0.2
-widgetStyle=Breeze
+widgetStyle=Darkly
 
 [KFileDialog Settings]
 Allow Expansion=false
@@ -166,7 +168,7 @@ Show Full Path=false
 Show Inline Previews=true
 Show Preview=false
 Show Speedbar=true
-Show hidden files=true
+Show hidden files=false
 Sort by=Name
 Sort directories first=true
 Sort hidden files last=false
@@ -174,13 +176,21 @@ Sort reversed=false
 Speedbar Width=140
 View Style=DetailTree
 
-[Sounds]
-Theme=freedesktop
+[Locale]
+BinaryUnitDialect=1
+
+[PreviewSettings]
+EnableRemoteFolderThumbnail=false
+MaximumRemoteSize=0
+
+[Shortcuts]
+Help=
+WhatsThis=
 
 [WM]
 activeBackground=26,27,38
 activeBlend=215,218,224
-activeFont=Inter,10,-1,5,600,0,0,0,0,0,0,0,0,0,0,1,SemiBold,0,0
+activeFont=Inter,10,-1,5,500,0,0,0,0,0,0,0,0,0,0,1,Medium,0,0
 activeForeground=215,218,224
 inactiveBackground=26,27,38
 inactiveBlend=110,108,124

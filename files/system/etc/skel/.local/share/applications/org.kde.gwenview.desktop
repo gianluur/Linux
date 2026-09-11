@@ -1,0 +1,21 @@
+[Desktop Entry]
+Categories=Qt;KDE;Graphics;Viewer;Photography;
+Comment=A simple image viewer
+Exec=/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=gwenview --file-forwarding org.kde.gwenview @@u %U @@
+GenericName=Image Viewer
+Icon=org.kde.gwenview
+InitialPreference=8
+MimeType=inode/directory;image/avif;image/gif;image/heif;image/jpeg;image/jxl;image/png;image/bmp;image/x-eps;image/x-icns;image/x-ico;image/x-portable-bitmap;image/x-portable-graymap;image/x-portable-pixmap;image/x-xbitmap;image/x-xpixmap;image/tiff;image/x-psd;image/x-webp;image/webp;image/x-tga;image/x-xcf;image/openraster;image/svg+xml;image/svg+xml-compressed;application/x-krita;
+Name=Photos
+NoDisplay=false
+Path=
+PrefersNonDefaultGPU=false
+StartupNotify=true
+Terminal=false
+TerminalOptions=
+Type=Application
+X-DBUS-ServiceName=org.kde.gwenview
+X-DocPath=gwenview/index.html
+X-Flatpak=org.kde.gwenview
+X-KDE-SubstituteUID=false
+X-KDE-Username=

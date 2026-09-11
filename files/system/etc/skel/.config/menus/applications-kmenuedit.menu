@@ -30,6 +30,10 @@
  </Menu>
  <Menu>
   <Name>Games</Name>
+  <Menu>
+   <Name>Development</Name>
+   <NotDeleted/>
+  </Menu>
   <Layout>
    <Merge type="menus"/>
    <Menuname>Arcade</Menuname>
@@ -39,14 +43,14 @@
    <Menuname>Logic</Menuname>
    <Menuname>TacticStrategy</Menuname>
    <Merge type="files"/>
+   <Filename>com.vysp3r.ProtonPlus.desktop</Filename>
    <Filename>net.lutris.Lutris.desktop</Filename>
    <Filename>bazzite-steam-bpm.desktop</Filename>
    <Filename>steam.desktop</Filename>
   </Layout>
-  <Menu>
-   <Name>Development</Name>
-   <NotDeleted/>
-  </Menu>
+  <Exclude>
+   <Filename>BeamNG.drive.desktop</Filename>
+  </Exclude>
  </Menu>
  <Menu>
   <Name>Help</Name>
@@ -59,6 +63,23 @@
  <Menu>
   <Name>Internet</Name>
   <NotDeleted/>
+  <Exclude>
+   <Filename>app.zen_browser.zen.desktop</Filename>
+   <Filename>bazzite-steam-bpm.desktop</Filename>
+  </Exclude>
+  <Layout>
+   <Merge type="menus"/>
+   <Menuname>Terminal</Menuname>
+   <Merge type="files"/>
+   <Filename>org.kde.kdeconnect.app.desktop</Filename>
+   <Filename>org.kde.kdeconnect.sms.desktop</Filename>
+   <Filename>proton.vpn.app.gtk.desktop</Filename>
+   <Filename>steam.desktop</Filename>
+   <Filename>dev.vencord.Vesktop.desktop</Filename>
+   <Filename>webapp-manager.desktop</Filename>
+   <Separator/>
+   <Menuname>More</Menuname>
+  </Layout>
  </Menu>
  <Move>
   <Old>Development/Internet</Old>
@@ -118,6 +139,48 @@
   <Include>
    <Filename>discourse.desktop</Filename>
    <Filename>bbrew.desktop</Filename>
+   <Filename>BeamNG.drive.desktop</Filename>
+   <Filename>app.zen_browser.zen.desktop</Filename>
+   <Filename>bazzite-documentation.desktop</Filename>
+   <Filename>bazzite-steam-bpm.desktop</Filename>
   </Include>
+ </Menu>
+ <Menu>
+  <Name>System</Name>
+  <Layout>
+   <Merge type="menus"/>
+   <Menuname>ScreenSavers</Menuname>
+   <Menuname>Terminal</Menuname>
+   <Merge type="files"/>
+   <Filename>io.github.rfrench3.bazzite-updater.desktop</Filename>
+   <Filename>btrfs-assistant.desktop</Filename>
+   <Filename>cardwire-gui.desktop</Filename>
+   <Filename>org.kde.discover.desktop</Filename>
+   <Filename>org.kde.dolphin.desktop</Filename>
+   <Filename>org.fcitx.Fcitx5.desktop</Filename>
+   <Filename>org.fedoraproject.MediaWriter.desktop</Filename>
+   <Filename>firewall-config.desktop</Filename>
+   <Filename>org.gnome.Firmware.desktop</Filename>
+   <Filename>org.kde.kinfocenter.desktop</Filename>
+   <Filename>input-remapper-gtk.desktop</Filename>
+   <Filename>org.kde.kjournaldbrowser.desktop</Filename>
+   <Filename>org.kde.partitionmanager.desktop</Filename>
+   <Filename>kitty.desktop</Filename>
+   <Filename>klassy-settings.desktop</Filename>
+   <Filename>kvantummanager.desktop</Filename>
+   <Filename>org.kde.kwalletmanager.desktop</Filename>
+   <Filename>org.kde.kmenuedit.desktop</Filename>
+   <Filename>nvidia-settings.desktop</Filename>
+   <Filename>RInit.desktop</Filename>
+   <Filename>com.gerbilsoft.rom-properties.rp-config.desktop</Filename>
+   <Filename>org.kde.plasma-systemmonitor.desktop</Filename>
+   <Filename>systemsettings.desktop</Filename>
+   <Filename>vm_curator.desktop</Filename>
+   <Separator/>
+   <Menuname>More</Menuname>
+  </Layout>
+  <Exclude>
+   <Filename>bazzite-documentation.desktop</Filename>
+  </Exclude>
  </Menu>
 </Menu>

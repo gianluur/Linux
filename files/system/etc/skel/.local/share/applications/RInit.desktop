@@ -1,0 +1,17 @@
+[Desktop Entry]
+Name=RInit
+GenericName=Terminal entering RInit
+Comment=Terminal entering RInit
+Categories=Distrobox;System;Utility
+Exec=/usr/bin/distrobox enter  RInit
+Icon=/var/home/test/.local/share/icons/distrobox/fedora.png
+Keywords=distrobox;
+NoDisplay=false
+Terminal=true
+TryExec=/usr/bin/distrobox
+Type=Application
+Actions=Remove;
+
+[Desktop Action Remove]
+Name=Remove RInit from system
+Exec=/usr/bin/distrobox rm  RInit

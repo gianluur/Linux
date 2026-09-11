@@ -1,6 +1,8 @@
 [Context]
-filesystems=~/.themes:ro;
+filesystems=xdg-config/gtk-3.0:ro;xdg-config/gtk-4.0:ro;~/.themes:ro;xdg-config/fontconfig:ro;
 
 [Environment]
 GTK_THEME=Tokyonight-Purple-Dark
-ICON_THEME=MacTahoe-purple
+ICON_THEME=MacTahoe-purple-dark
+QT_QPA_PLATFORMTHEME=kde
+QT_STYLE_OVERRIDE=Darkly

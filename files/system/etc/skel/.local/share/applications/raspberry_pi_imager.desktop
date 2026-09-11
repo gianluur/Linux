@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=Application
+Version=1.5
+Name=Raspberry Pi Imager
+Name[zh_CN]=树莓派启动盘制作工具
+Comment=Tool for writing images to SD cards for Raspberry Pi
+Comment[zh_CN]=将镜像写入SD卡的树莓派工具
+Icon=/var/home/test/AppImages/.icons/raspberry_pi_imager
+TryExec=/var/home/test/AppImages/raspberry_pi_imager.appimage
+Exec=env DESKTOPINTEGRATION=1 /var/home/test/AppImages/raspberry_pi_imager.appimage %u
+MimeType=x-scheme-handler/rpi-imager;application/vnd.raspberrypi.imager-manifest+json;
+Categories=Utility;
+StartupNotify=false
+X-AppImage-Name=Raspberry Pi Imager

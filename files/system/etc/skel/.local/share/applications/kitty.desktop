@@ -1,0 +1,23 @@
+[Desktop Entry]
+Categories=System;TerminalEmulator;
+Comment=
+Exec=kitty
+GenericName=
+Icon=kitty
+Name=Terminal
+NoDisplay=false
+Path=
+PrefersNonDefaultGPU=false
+StartupNotify=true
+Terminal=false
+TerminalOptions=
+TryExec=kitty
+Type=Application
+Version=1.0
+X-KDE-SubstituteUID=false
+X-KDE-Username=
+X-TerminalArgAppId=--class
+X-TerminalArgDir=--working-directory
+X-TerminalArgExec=--
+X-TerminalArgHold=--hold
+X-TerminalArgTitle=--title

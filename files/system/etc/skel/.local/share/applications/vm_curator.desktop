@@ -1,0 +1,17 @@
+[Desktop Entry]
+Categories=System;Emulator;
+Comment=A TUI application to manage QEMU VM library
+Exec=kitty /var/home/test/AppImages/vm_curator.appimage
+Icon=/var/home/test/AppImages/.icons/vm_curator
+Name=VM Curator
+NoDisplay=false
+Path=
+PrefersNonDefaultGPU=true
+StartupNotify=true
+Terminal=false
+TerminalOptions=
+TryExec=/var/home/test/AppImages/vm_curator.appimage
+Type=Application
+X-AppImage-Name=VM Curator
+X-KDE-SubstituteUID=false
+X-KDE-Username=

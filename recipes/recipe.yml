@@ -1,8 +1,8 @@
 # yaml-language-server: $schema=https://schema.blue-build.org/recipe-v1.json
 name: workstation
-description: "Base: Bazzite | Desktop: KDE | Purpose: Dev, Office, Gaming"
+description: "Linux done properly."
 
-base-image: ghcr.io/ublue-os/bazzite-nvidia-open
+base-image: ghcr.io/gianluur/linux-core
 image-version: latest
 
 modules:
@@ -102,6 +102,7 @@ modules:
         - plasma-panel-colorizer
         - darkly
         - bazaar
+        - kde-material-you-colors
 
     remove:
       packages:
