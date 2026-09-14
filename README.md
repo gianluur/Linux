@@ -88,7 +88,7 @@ Because this image is produced using BlueBuild on top of Fedora Atomic / Bazzite
 
 ```bash
 # Rebase to your OCI container image
-rpm-ostree rebase ostree-unverified-registry:ghcr.io/YOUR_GITHUB_USERNAME/workstation:latest
+rpm-ostree rebase ostree-unverified-registry:ghcr.io/gianluur/workstation:latest
 
 ```
 

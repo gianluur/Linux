@@ -60,6 +60,7 @@ modules:
         - zsh
         - distrobox
         - mise
+        - nix
 
         # The reason VSCode is here instead of the flatpak app section
         # is because a flatpak doesn't have system access,
@@ -86,6 +87,8 @@ modules:
         # System
         - sbsigntools
         - wl-clipboard
+        - snapper
+        - btrfs-assistant
 
         # Fonts
         - rsms-inter-fonts
@@ -136,3 +139,4 @@ modules:
       enabled:
         - libvirtd
         - docker
+        - nix-daemon

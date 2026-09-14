@@ -94,4 +94,8 @@ fi
 if command -v starship &>/dev/null; then
     eval "$(starship init zsh)"
 fi
- 
+
+# For nix package manager
+if [ -e /nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh ]; then 
+    . /nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh; 
+fi

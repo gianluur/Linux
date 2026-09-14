@@ -26,8 +26,12 @@ echo "=== Configuring fonts ==="
 "$SCRIPT_DIR/setup-netbird.sh"
 echo "=== Done === "
 
-echo "🔧 Configuring virtualization..."
+echo "Configuring virtualization..."
 "$SCRIPT_DIR/setup-virtualization.sh"
+echo "=== Done ==="
+
+echo "Configuring nix package mangaer..."
+"$SCRIPT_DIR/setup-nix.sh"
 echo "=== Done ==="
 
 echo "=== Installing Apps ==="
