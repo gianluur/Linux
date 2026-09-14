@@ -16,6 +16,7 @@ FLATPAKS=(
     com.github.tchx84.Flatseal # Flatpak permissions
     org.fedoraproject.MediaWriter # ISO Burner
     org.freedesktop.Piper # Logitech
+    io.github.kolunmi.Bazaar # App Store
 )
 
 # --- Configuration ---

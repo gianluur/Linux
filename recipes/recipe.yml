@@ -101,7 +101,6 @@ modules:
         - kwin-effects-better-blur-dx-x11
         - plasma-panel-colorizer
         - darkly
-        - bazaar
         - kde-material-you-colors
 
     remove:
@@ -112,49 +111,6 @@ modules:
         - kwrite
         - kate
         - filelight
-
-        # Bazzite Debloating
-        - waydroid
-        - cage
-        - wlr-randr
-        - lato-fonts
-        - fira-code-fonts
-        - nerd-fonts
-        - plasma-oxygen
-        - oxygen-icon-theme
-        - gnome-disk-utility
-        - stress-ng
-        - powerbuttond
-        - sdgyrodsu
-        - duf
-        - gum
-        - jupiter-fan-control
-        - jupiter-hw-support-btrfs
-        - jupiter-sd-mounting-btrfs
-        - steamdeck-dsp
-        - steamdeck-kde-presets-desktop
-        - steamdeck-backgrounds
-        - galileo-mura
-        - bazzite-portal
-        - cockpit-networkmanager
-        - cockpit-podman
-        - cockpit-selinux
-        - cockpit-system
-        - cockpit-files
-        - cockpit-storaged
-        - gmodpatchtool
-        - vpower
-        - steamos-manager-powerstation
-        - steamos-manager-powerstation-gamescope-session-plus
-        - steam-notif-daemon
-        - inputplumber
-        - gamescope-session-ogui-steam
-        - ds-inhibit2
-        - khelpcenter
-        - ryzenadj
-        - rp-config
-        - lutris
-        - input-remapper-gtk
 
   - type: script
     scripts:
