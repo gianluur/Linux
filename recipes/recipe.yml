@@ -2,7 +2,7 @@
 name: workstation
 description: "Linux done properly."
 
-base-image: ghcr.io/gianluur/linux-core
+base-image: ghcr.io/ublue-os/bazzite-nvidia-open
 image-version: latest
 
 modules:
