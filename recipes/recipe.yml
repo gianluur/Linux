@@ -83,12 +83,11 @@ modules:
         - docker-compose-plugin
         - freerdp
         - winboat-0.9.0-x86_64.rpm
+        - uxplay
 
         # System
         - sbsigntools
         - wl-clipboard
-        - snapper
-        - btrfs-assistant
 
         # Fonts
         - rsms-inter-fonts
