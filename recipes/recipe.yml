@@ -86,24 +86,25 @@ modules:
         - uxplay
 
         # System
+        - nwg-look
         - sbsigntools
         - wl-clipboard
+        - kde-partitionmanager
+        - kde-connect
 
         # Fonts
         - rsms-inter-fonts
         - jet-brains-mono-nerd-fonts
 
-        # KDE Stuff
+        # Theming
         - kvantum
-        - nwg-look
-        - kde-partitionmanager
-        - kde-connect
         - klassy
         - kwin-effects-better-blur-dx
         - kwin-effects-better-blur-dx-x11
         - plasma-panel-colorizer
         - darkly
         - kde-material-you-colors
+        - matugen
 
     remove:
       packages:
