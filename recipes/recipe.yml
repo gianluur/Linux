@@ -105,6 +105,7 @@ modules:
         - darkly
         - kde-material-you-colors
         - matugen
+        - plasma-sdk
 
     remove:
       packages:
