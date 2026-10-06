@@ -1,0 +1,40 @@
+[config]
+
+[templates.color-scheme]
+input_path = '~/.config/matugen/templates/Matugen.colors'
+output_path = '~/.local/share/color-schemes/Matugen.colors'
+
+[templates.gtk3]
+input_path = '~/.config/matugen/templates/gtk-colors.css'
+output_path = '~/.config/gtk-3.0/colors.css'
+post_hook = 'gsettings set org.gnome.desktop.interface gtk-theme ""; gsettings set org.gnome.desktop.interface gtk-theme adw-gtk3-dark'
+
+[templates.gtk4]
+input_path = '~/.config/matugen/templates/gtk-colors.css'
+output_path = '~/.config/gtk-4.0/colors.css'
+post_hook = '~/.config/matugen/post-hook-scripts/gtk-themes-reload.sh'
+
+[templates.kitty]
+input_path = '~/.config/matugen/templates/kitty-colors.css'
+output_path = '~/.config/kitty/themes/Matugen.conf'
+post_hook = "kitty +kitten themes --reload-in=all Matugen"
+
+[templates.obs]
+input_path = '~/.config/matugen/templates/matugen.obt'
+output_path = '~/.config/obs-studio/themes/matugen.obt'
+
+[templates.vscode-raw]
+input_path = './templates/vscode-colors'
+output_path = '~/.cache/matugen/vscode-colors'
+
+[templates.vscode-json]
+input_path = './templates/vscode-colors.json'
+output_path = '~/.cache/matugen/vscode-colors.json'
+
+[templates.starship]
+input_path = '~/.config/matugen/templates/starship-colors.css'
+output_path = '~/.config/starship.toml'
+
+[templates.yazi]
+input_path = './templates/yazi-theme.toml'
+output_path = '~/.config/yazi/theme.toml'
