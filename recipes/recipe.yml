@@ -141,3 +141,5 @@ modules:
         - libvirtd
         - docker
         - nix-daemon
+        - nix.mount
+        - nix-directory
