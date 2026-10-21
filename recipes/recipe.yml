@@ -162,7 +162,6 @@ modules:
         - systemd-oomd.service
         - docker.service
         - libvirtd.service
-        - irqbalance.service
 
       masked:
         - systemd-udev-settle.service
