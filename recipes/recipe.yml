@@ -119,6 +119,8 @@ modules:
         - kate
         - filelight
         - gnome-disks
+        - tuned
+        - tuned-ppd
 
   - type: script
     scripts:
