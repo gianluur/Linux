@@ -91,6 +91,9 @@ modules:
         - wl-clipboard
         - kde-partitionmanager
         - kde-connect
+        - tlp
+        - tlp-rdw
+        - powertop
 
         # Fonts
         - rsms-inter-fonts
@@ -115,31 +118,53 @@ modules:
         - kwrite
         - kate
         - filelight
+        - gnome-disks
 
   - type: script
     scripts:
       - setup_shell.sh
+      - install_vpn.sh
+      - setup_windows_vm.sh
     snippets:
       - chmod +x /etc/bluebuild/*
-      - dnf install -y --setopt=tsflags=noscripts proton-vpn-gnome-desktop
-      - dnf install -y --setopt=tsflags=noscripts netbird netbird-ui gtk4 webkitgtk6.0 xdg-utils
-
-      # === VM ===
-      # TPM directory for windows machines
-      - mkdir -p /var/lib/swtpm-localca
-      - chown tss:tss /var/lib/swtpm-localca
-      - restorecon -Rv /var/lib/libvirt /var/log/libvirt /var/lib/swtpm-localca 2>/dev/null || true
 
   - type: kargs
     kargs:
       - kvm.ignore_msrs=1
       - kvm.report_ignored_msrs=0
+      - split_lock_detect=off
+      - nowatchdog=0
+      - nmi_watchdog=0
+      - usbcore.autosuspend=-1
+      - page_alloc.shuffle=1
 
   - type: systemd
     system:
       enabled:
-        - libvirtd
-        - docker
+        - docker.socket
+        - nix-daemon.socket
+        - virtqemud.socket
+        - virtlxcd.socket
+        - virtxend.socket
+        - virtvboxd.socket
+        - virtnetworkd.socket
+        - virtstoraged.socket
         - nix-daemon
         - nix.mount
         - nix-directory
+        - tlp
+
+      disabled:
+        - NetworkManager-wait-online.service
+        - fedora-atomic-desktop-mandb-update.service
+        - systemd-oomd.service
+        - docker.service
+        - libvirtd.service
+        - irqbalance.service
+
+      masked:
+        - systemd-udev-settle.service
+        - tuned.service
+        - tuned-ppd.service
+        - systemd-rfkill.service
+        - systemd-rfkill.socket
